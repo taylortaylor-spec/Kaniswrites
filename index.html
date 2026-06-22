@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kanis Lupus</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --black: #0A0C09; --oxblood: #6B1E1E; --oxblood-light: #8B2E2E;
+  --gold: #C9A84C; --cream: #F0EDE6;
+  --surface: #131510; --surface3: #252A1E;
+  --muted: #6A7260; --text: #EDF0E8; --text-dim: #9AA090;
+}
+body {
+  background-color: #0A0C09;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cg fill='none' stroke-linecap='round'%3E%3Cg stroke='%23C9A84C' stroke-width='1.6' opacity='0.2'%3E%3Cpolygon points='50,22 72,60 28,60'/%3E%3Cline x1='50' y1='60' x2='50' y2='78'/%3E%3Cline x1='40' y1='70' x2='60' y2='70'/%3E%3C/g%3E%3Cg stroke='%23C9A84C' stroke-width='1.4' opacity='0.18'%3E%3Ccircle cx='280' cy='80' r='20'/%3E%3Cline x1='280' y1='100' x2='280' y2='122'/%3E%3Cline x1='267' y1='112' x2='293' y2='112'/%3E%3Cpath d='M260,58 Q280,40 300,58'/%3E%3C/g%3E%3Cg stroke='%239A7D36' stroke-width='1.4' opacity='0.17'%3E%3Ccircle cx='180' cy='300' r='22'/%3E%3Cline x1='158' y1='300' x2='202' y2='300'/%3E%3C/g%3E%3Cg stroke='%239A7D36' stroke-width='1.4' opacity='0.19'%3E%3Ccircle cx='70' cy='240' r='20'/%3E%3Cline x1='50' y1='240' x2='90' y2='240'/%3E%3Cline x1='70' y1='220' x2='70' y2='260'/%3E%3C/g%3E%3Cg stroke='%23C9A84C' stroke-width='1.5' opacity='0.19'%3E%3Cpolygon points='330,210 356,254 304,254'/%3E%3C/g%3E%3Cg stroke='%239A7D36' stroke-width='1.4' opacity='0.16'%3E%3Cpolygon points='180,150 206,106 154,106'/%3E%3C/g%3E%3Cg stroke='%23C9A84C' stroke-width='1.3' opacity='0.17'%3E%3Ccircle cx='340' cy='340' r='22'/%3E%3Crect x='326' y='326' width='28' height='28'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  color: #EDF0E8;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 400; }
+nav {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1.5rem 2.5rem; border-bottom: 0.5px solid var(--surface3);
+  background: rgba(10,12,9,0.95);
+}
+.nav-logo { font-family: 'Playfair Display', serif; font-size: 1.1rem; letter-spacing: 0.08em; color: var(--gold); }
+.nav-logo span { color: var(--text-dim); font-size: 0.7rem; display: block; font-family: 'Inter', sans-serif; letter-spacing: 0.18em; text-transform: uppercase; }
+.nav-links { display: flex; gap: 1.5rem; }
+.nav-links a { color: var(--text-dim); text-decoration: none; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; transition: color 0.2s; }
+.nav-links a:hover { color: var(--gold); }
+
+main { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 5rem 2rem; text-align: center; }
+.eyebrow { font-size: 0.7rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.75rem; }
+h1 { font-size: clamp(3rem, 8vw, 5.5rem); line-height: 1.05; color: var(--cream); margin-bottom: 1.25rem; }
+h1 em { color: var(--gold); font-style: italic; }
+.tagline { font-size: 1rem; color: var(--text-dim); max-width: 480px; line-height: 1.8; margin-bottom: 3rem; }
+.cta-group { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 4rem; }
+.btn-primary { background: var(--oxblood); color: var(--cream); border: none; font-family: 'Inter', sans-serif; font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase; padding: 0.95rem 2.5rem; cursor: pointer; text-decoration: none; display: inline-block; transition: background 0.2s; }
+.btn-primary:hover { background: var(--oxblood-light); }
+.btn-secondary { background: none; color: var(--text-dim); border: 0.5px solid var(--surface3); font-family: 'Inter', sans-serif; font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase; padding: 0.95rem 2.5rem; cursor: pointer; text-decoration: none; display: inline-block; transition: all 0.2s; }
+.btn-secondary:hover { border-color: var(--gold); color: var(--gold); }
+
+.works { max-width: 860px; width: 100%; margin-bottom: 5rem; }
+.works-label { font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 0.5px solid var(--surface3); text-align: left; }
+.works-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1px; }
+.work-card { background: rgba(19,21,16,0.85); border: 0.5px solid var(--surface3); padding: 1.25rem; text-align: left; }
+.work-genre { font-size: 0.62rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.5rem; }
+.work-title { font-family: 'Playfair Display', serif; font-size: 1rem; color: var(--cream); margin-bottom: 0.4rem; line-height: 1.35; }
+.work-status { font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.15rem 0.5rem; display: inline-block; }
+.status-live { background: #0E1520; color: #5BA8D4; }
+.status-active { background: #0E1A0A; color: #7AB855; }
+.status-drafting { background: #1A1A0A; color: #C9A84C; }
+
+.founding { max-width: 560px; width: 100%; background: rgba(19,21,16,0.85); border: 0.5px solid var(--surface3); padding: 2.5rem; margin-bottom: 5rem; }
+.founding h2 { font-size: 1.5rem; color: var(--cream); margin-bottom: 0.75rem; }
+.founding p { font-size: 0.88rem; color: var(--text-dim); line-height: 1.8; margin-bottom: 1.75rem; }
+.founding-price { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--gold); margin-bottom: 0.25rem; }
+.founding-price span { font-family: 'Inter', sans-serif; font-size: 0.8rem; color: var(--muted); font-weight: 300; }
+.founding-perks { list-style: none; text-align: left; margin-bottom: 1.75rem; }
+.founding-perks li { font-size: 0.82rem; color: var(--text-dim); padding: 0.4rem 0; border-bottom: 0.5px solid var(--surface3); display: flex; gap: 0.75rem; align-items: flex-start; }
+.founding-perks li::before { content: '—'; color: var(--gold-dim); flex-shrink: 0; }
+
+footer { border-top: 0.5px solid var(--surface3); padding: 1.5rem 2.5rem; display: flex; align-items: center; justify-content: space-between; background: rgba(10,12,9,0.8); }
+.footer-logo { font-family: 'Playfair Display', serif; font-size: 0.9rem; color: var(--gold); }
+.footer-links { display: flex; gap: 1.25rem; }
+.footer-links a { color: var(--muted); text-decoration: none; font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; transition: color 0.2s; }
+.footer-links a:hover { color: var(--gold); }
+
+@media(max-width: 600px) {
+  nav { padding: 1rem 1.25rem; } .nav-links { display: none; }
+  main { padding: 3rem 1.25rem; } .cta-group { flex-direction: column; align-items: center; }
+  footer { flex-direction: column; gap: 1rem; text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">Kanis Lupus <span>Author</span></div>
+  <div class="nav-links">
+    <a href="https://www.amazon.com/dp/B0GVRYZ2T1" target="_blank">Fera Lux</a>
+    <a href="https://www.instagram.com/kaniswrites" target="_blank">Instagram</a>
+    <a href="kanis-lupus-portal.html">Founding Circle</a>
+  </div>
+</nav>
+
+<main>
+  <p class="eyebrow">Kanis Lupus</p>
+  <h1>Made of<br><em>wild light</em></h1>
+  <p class="tagline">Poetry, dark romance, and epic fantasy. Debut collection live now. Ten books in progress. A founding circle for those who want to be there first.</p>
+  <div class="cta-group">
+    <a href="kanis-lupus-portal.html" class="btn-primary">Join the founding circle</a>
+    <a href="https://www.amazon.com/dp/B0GVRYZ2T1" target="_blank" class="btn-secondary">Read Fera Lux</a>
+  </div>
+
+  <div class="works">
+    <p class="works-label">The work</p>
+    <div class="works-grid">
+      <div class="work-card">
+        <div class="work-genre">Poetry collection</div>
+        <div class="work-title">Fera Lux: Made of Wild Light</div>
+        <span class="work-status status-live">Live on Amazon</span>
+      </div>
+      <div class="work-card">
+        <div class="work-genre">Paranormal dark romance · 10 books</div>
+        <div class="work-title">The Blood Harmonic</div>
+        <span class="work-status status-active">In progress</span>
+      </div>
+      <div class="work-card">
+        <div class="work-genre">Epic fantasy · 7 books</div>
+        <div class="work-title">The Last Unborn</div>
+        <span class="work-status status-active">In progress</span>
+      </div>
+      <div class="work-card">
+        <div class="work-genre">Screenplay</div>
+        <div class="work-title">TV pilot — untitled</div>
+        <span class="work-status status-drafting">Drafting</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="founding">
+    <h2>The founding circle</h2>
+    <p>A private space for serious readers. Early chapters, research deep dives, poem readings, and direct access — before anyone else sees it.</p>
+    <div class="founding-price">$50 <span>/ month</span></div>
+    <ul class="founding-perks">
+      <li>Early chapters of The Blood Harmonic before publication</li>
+      <li>Research deep dives — Jung, mythology, neuroscience, esoteric systems</li>
+      <li>Poem readings with context and process notes</li>
+      <li>Live writing sessions and Q&As</li>
+      <li>Input on cover art direction and series decisions</li>
+      <li>Name in Book 1 acknowledgments</li>
+    </ul>
+    <a href="kanis-lupus-portal.html" class="btn-primary" style="width:100%;text-align:center;display:block;">Enter the founding circle</a>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-logo">Kanis Lupus</div>
+  <div class="footer-links">
+    <a href="https://www.amazon.com/dp/B0GVRYZ2T1" target="_blank">Fera Lux</a>
+    <a href="https://www.instagram.com/kaniswrites" target="_blank">Instagram</a>
+    <a href="kanis-lupus-portal.html">Founding Circle</a>
+  </div>
+</footer>
+
+</body>
+</html>
