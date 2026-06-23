@@ -6,170 +6,288 @@
 <title>Kanis Lupus — Founding Circle</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-:root {
-  --black: #0A0C09; --oxblood: #6B1E1E; --oxblood-light: #8B2E2E;
-  --gold: #C9A84C; --gold-dim: #9A7D36; --cream: #F0EDE6;
-  --moss: #2D4A1E; --moss-pale: #4A7A30;
-  --surface: #131510; --surface2: #1A1D15; --surface3: #252A1E;
-  --muted: #6A7260; --text: #EDF0E8; --text-dim: #9AA090;
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --black:#0A0C09;--oxblood:#6B1E1E;--oxblood-light:#8B2E2E;
+  --gold:#C9A84C;--gold-dim:#9A7D36;--cream:#F0EDE6;
+  --moss:#2D4A1E;--moss-pale:#4A7A30;
+  --surface:#131510;--surface2:#1A1D15;--surface3:#252A1E;
+  --muted:#6A7260;--text:#EDF0E8;--text-dim:#9AA090;
 }
-body {
-  background-color: #0A0C09;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cg fill='none' stroke-linecap='round'%3E%3Cg stroke='%23C9A84C' stroke-width='1.6' opacity='0.2'%3E%3Cpolygon points='50,22 72,60 28,60'/%3E%3Cline x1='50' y1='60' x2='50' y2='78'/%3E%3Cline x1='40' y1='70' x2='60' y2='70'/%3E%3C/g%3E%3Cg stroke='%23C9A84C' stroke-width='1.4' opacity='0.18'%3E%3Ccircle cx='280' cy='80' r='20'/%3E%3Cline x1='280' y1='100' x2='280' y2='122'/%3E%3Cline x1='267' y1='112' x2='293' y2='112'/%3E%3Cpath d='M260,58 Q280,40 300,58'/%3E%3C/g%3E%3Cg stroke='%239A7D36' stroke-width='1.4' opacity='0.17'%3E%3Ccircle cx='180' cy='300' r='22'/%3E%3Cline x1='158' y1='300' x2='202' y2='300'/%3E%3C/g%3E%3Cg stroke='%239A7D36' stroke-width='1.4' opacity='0.19'%3E%3Ccircle cx='70' cy='240' r='20'/%3E%3Cline x1='50' y1='240' x2='90' y2='240'/%3E%3Cline x1='70' y1='220' x2='70' y2='260'/%3E%3C/g%3E%3Cg stroke='%23C9A84C' stroke-width='1.5' opacity='0.19'%3E%3Cpolygon points='330,210 356,254 304,254'/%3E%3C/g%3E%3Cg stroke='%239A7D36' stroke-width='1.4' opacity='0.16'%3E%3Cpolygon points='180,150 206,106 154,106'/%3E%3C/g%3E%3Cg stroke='%23C9A84C' stroke-width='1.3' opacity='0.17'%3E%3Ccircle cx='340' cy='340' r='22'/%3E%3Crect x='326' y='326' width='28' height='28'/%3E%3C/g%3E%3Cg stroke='%23C9A84C' stroke-width='1.3' opacity='0.16'%3E%3Ccircle cx='310' cy='170' r='16'/%3E%3Cline x1='294' y1='170' x2='326' y2='170'/%3E%3Cline x1='310' y1='154' x2='310' y2='186'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  color: #EDF0E8;
-  font-family: 'Inter', sans-serif;
-  font-weight: 300;
-  line-height: 1.7;
-  min-height: 100vh;
-  overflow-x: hidden;
+body{
+  background-color:#0A0C09;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cg fill='none' stroke-linecap='round'%3E%3Cg stroke='%23C9A84C' stroke-width='1.6' opacity='0.2'%3E%3Cpolygon points='50,22 72,60 28,60'/%3E%3Cline x1='50' y1='60' x2='50' y2='78'/%3E%3Cline x1='40' y1='70' x2='60' y2='70'/%3E%3C/g%3E%3Cg stroke='%23C9A84C' stroke-width='1.4' opacity='0.18'%3E%3Ccircle cx='280' cy='80' r='20'/%3E%3Cline x1='280' y1='100' x2='280' y2='122'/%3E%3Cline x1='267' y1='112' x2='293' y2='112'/%3E%3Cpath d='M260,58 Q280,40 300,58'/%3E%3C/g%3E%3Cg stroke='%239A7D36' stroke-width='1.4' opacity='0.17'%3E%3Ccircle cx='180' cy='300' r='22'/%3E%3Cline x1='158' y1='300' x2='202' y2='300'/%3E%3C/g%3E%3Cg stroke='%239A7D36' stroke-width='1.4' opacity='0.19'%3E%3Ccircle cx='70' cy='240' r='20'/%3E%3Cline x1='50' y1='240' x2='90' y2='240'/%3E%3Cline x1='70' y1='220' x2='70' y2='260'/%3E%3C/g%3E%3Cg stroke='%23C9A84C' stroke-width='1.5' opacity='0.19'%3E%3Cpolygon points='330,210 356,254 304,254'/%3E%3C/g%3E%3Cg stroke='%239A7D36' stroke-width='1.4' opacity='0.16'%3E%3Cpolygon points='180,150 206,106 154,106'/%3E%3C/g%3E%3Cg stroke='%23C9A84C' stroke-width='1.3' opacity='0.17'%3E%3Ccircle cx='340' cy='340' r='22'/%3E%3Crect x='326' y='326' width='28' height='28'/%3E%3C/g%3E%3Cg stroke='%23C9A84C' stroke-width='1.3' opacity='0.16'%3E%3Ccircle cx='310' cy='170' r='16'/%3E%3Cline x1='294' y1='170' x2='326' y2='170'/%3E%3Cline x1='310' y1='154' x2='310' y2='186'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  color:#EDF0E8;font-family:'Inter',sans-serif;font-weight:300;line-height:1.7;min-height:100vh;overflow-x:hidden;
 }
-h1,h2,h3,h4 { font-family: 'Playfair Display', serif; font-weight: 400; }
-nav { display:flex; align-items:center; justify-content:space-between; padding:1.25rem 2rem; border-bottom:0.5px solid #252A1E; position:sticky; top:0; background:rgba(10,12,9,0.96); z-index:100; }
-.nav-logo { font-family:'Playfair Display',serif; font-size:1.1rem; letter-spacing:0.08em; color:var(--gold); }
-.nav-logo span { color:var(--text-dim); font-size:0.72rem; display:block; font-family:'Inter',sans-serif; letter-spacing:0.15em; text-transform:uppercase; font-weight:400; }
-.nav-tabs { display:flex; gap:0.25rem; }
-.nav-btn { background:none; border:0.5px solid var(--surface3); color:var(--text-dim); font-family:'Inter',sans-serif; font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; padding:0.4rem 1rem; cursor:pointer; transition:all 0.2s; }
-.nav-btn:hover { border-color:var(--gold); color:var(--gold); }
-.nav-btn.active { border-color:var(--oxblood); color:var(--cream); background:var(--oxblood); }
-.view { display:none; } .view.active { display:block; }
-.hero { text-align:center; padding:5rem 2rem 3.5rem; border-bottom:0.5px solid var(--surface3); }
-.hero-eyebrow { font-size:0.7rem; letter-spacing:0.25em; text-transform:uppercase; color:var(--gold); margin-bottom:1.5rem; }
-.hero h1 { font-size:clamp(2.5rem,6vw,4.2rem); line-height:1.08; color:var(--cream); margin-bottom:1rem; }
-.hero h1 em { color:var(--gold); font-style:italic; }
-.hero-sub { font-size:0.95rem; color:var(--text-dim); max-width:420px; margin:0 auto 2.5rem; line-height:1.8; }
-.hero-stats { display:flex; gap:3rem; justify-content:center; margin-bottom:2.5rem; }
-.hero-stat-num { font-family:'Playfair Display',serif; font-size:1.75rem; color:var(--cream); }
-.hero-stat-label { font-size:0.68rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--muted); }
-.join-btn { display:inline-block; background:var(--oxblood); color:var(--cream); border:none; font-family:'Inter',sans-serif; font-size:0.8rem; letter-spacing:0.15em; text-transform:uppercase; padding:0.9rem 2.5rem; cursor:pointer; transition:background 0.2s; }
-.join-btn:hover { background:var(--oxblood-light); }
-.sub-nav-wrap { border-bottom:0.5px solid var(--surface3); background:rgba(10,12,9,0.7); }
-.sub-nav { display:flex; max-width:800px; margin:0 auto; padding:0 2rem; }
-.sub-tab { background:none; border:none; border-bottom:2px solid transparent; color:var(--text-dim); font-family:'Inter',sans-serif; font-size:0.73rem; letter-spacing:0.1em; text-transform:uppercase; padding:1rem 1.1rem; cursor:pointer; transition:all 0.15s; margin-bottom:-0.5px; }
-.sub-tab:hover { color:var(--cream); }
-.sub-tab.active { border-bottom-color:var(--gold); color:var(--gold); }
-.feed-container { max-width:800px; margin:0 auto; padding:2rem; }
-.feed-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:1.5rem; flex-wrap:wrap; gap:0.75rem; }
-.feed-header h2 { font-size:1.15rem; color:var(--cream); }
-.feed-filter { display:flex; gap:0.4rem; flex-wrap:wrap; }
-.filter-btn { background:none; border:0.5px solid var(--surface3); color:var(--text-dim); font-family:'Inter',sans-serif; font-size:0.68rem; letter-spacing:0.1em; text-transform:uppercase; padding:0.28rem 0.75rem; cursor:pointer; transition:all 0.15s; }
-.filter-btn:hover,.filter-btn.on { border-color:var(--moss-pale); color:#7AB855; }
-.post-card { background:rgba(19,21,16,0.9); border:0.5px solid var(--surface3); margin-bottom:1px; }
-.post-card.upcoming { border-left:2px solid var(--gold-dim); }
-.post-card.live-post { border-left:2px solid var(--oxblood); }
-.post-inner { padding:1.2rem 1.5rem; display:flex; gap:1.25rem; align-items:flex-start; }
-.post-date-col { min-width:46px; text-align:center; padding-top:2px; }
-.post-date-day { font-family:'Playfair Display',serif; font-size:1.4rem; color:var(--cream); line-height:1; }
-.post-date-month { font-size:0.62rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--muted); }
-.post-divider { width:0.5px; background:var(--surface3); align-self:stretch; flex-shrink:0; }
-.post-body { flex:1; min-width:0; }
-.post-meta { display:flex; align-items:center; gap:0.6rem; margin-bottom:0.35rem; flex-wrap:wrap; }
-.post-type { font-size:0.62rem; letter-spacing:0.15em; text-transform:uppercase; padding:0.18rem 0.55rem; }
-.type-research { background:#1A1A2E; color:#7F77DD; }
-.type-poem { background:#1A0E0E; color:#C97070; }
-.type-chapter { background:#0E1A0A; color:#7AB855; }
-.type-process { background:var(--surface2); color:var(--text-dim); border:0.5px solid var(--surface3); }
-.type-live { background:#2A0E0E; color:#E07070; }
-.type-script { background:#0E1520; color:#5BA8D4; }
-.type-novel { background:#1A150E; color:#C9A84C; }
-.type-other { background:var(--surface2); color:var(--text-dim); border:0.5px solid var(--surface3); }
-.post-status-badge { font-size:0.62rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--muted); }
-.post-status-badge.upcoming { color:var(--gold-dim); }
-.post-title { font-family:'Playfair Display',serif; font-size:1rem; color:var(--cream); margin-bottom:0.3rem; line-height:1.4; }
-.post-desc { font-size:0.82rem; color:var(--text-dim); line-height:1.7; margin-bottom:0.75rem; }
-.post-action { background:none; border:0.5px solid var(--surface3); color:var(--text-dim); font-family:'Inter',sans-serif; font-size:0.68rem; letter-spacing:0.1em; text-transform:uppercase; padding:0.32rem 0.85rem; cursor:pointer; transition:all 0.15s; }
-.post-action:hover { border-color:var(--gold-dim); color:var(--gold); }
-.post-lock { font-size:0.73rem; color:var(--muted); }
-.media-thumb { margin-top:0.7rem; }
-.media-thumb video,.media-thumb img { width:100%; max-height:180px; object-fit:cover; display:block; }
-.media-thumb audio { width:100%; }
-.chat-wrap { max-width:800px; margin:0 auto; padding:2rem; display:flex; flex-direction:column; height:calc(100vh - 220px); min-height:480px; }
-.chat-header { margin-bottom:1.1rem; }
-.chat-header h2 { font-size:1.15rem; color:var(--cream); margin-bottom:0.2rem; }
-.chat-header p { font-size:0.8rem; color:var(--text-dim); }
-.chat-messages { flex:1; overflow-y:auto; display:flex; flex-direction:column; gap:0.9rem; padding-right:0.4rem; margin-bottom:1rem; }
-.chat-messages::-webkit-scrollbar { width:2px; }
-.chat-messages::-webkit-scrollbar-thumb { background:var(--surface3); }
-.chat-msg-row { display:flex; gap:0.7rem; align-items:flex-start; }
-.chat-msg-row.mine { flex-direction:row-reverse; }
-.chat-avatar { width:28px; height:28px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:0.65rem; font-weight:500; flex-shrink:0; }
-.avatar-host { background:var(--oxblood); color:var(--cream); }
-.avatar-member { background:var(--surface3); color:var(--text-dim); }
-.chat-bubble-wrap { max-width:68%; }
-.chat-name { font-size:0.62rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--muted); margin-bottom:0.22rem; }
-.chat-msg-row.mine .chat-name { text-align:right; }
-.chat-bubble { padding:0.6rem 0.95rem; font-size:0.84rem; line-height:1.6; }
-.bubble-host { background:var(--oxblood); color:var(--cream); }
-.bubble-member { background:var(--surface2); color:var(--text); border:0.5px solid var(--surface3); }
-.bubble-mine { background:var(--surface3); color:var(--cream); }
-.chat-time { font-size:0.6rem; color:var(--muted); margin-top:0.18rem; }
-.chat-msg-row.mine .chat-time { text-align:right; }
-.chat-input-area { border:0.5px solid var(--surface3); background:var(--surface); padding:0.8rem 1rem; display:flex; gap:0.7rem; align-items:flex-end; }
-.chat-name-input { background:var(--surface2); border:0.5px solid var(--surface3); color:var(--text); font-family:'Inter',sans-serif; font-size:0.82rem; padding:0.5rem 0.7rem; outline:none; width:110px; flex-shrink:0; }
-.chat-name-input:focus { border-color:var(--gold-dim); }
-.chat-text-input { flex:1; background:none; border:none; color:var(--text); font-family:'Inter',sans-serif; font-size:0.84rem; outline:none; resize:none; min-height:20px; max-height:72px; line-height:1.5; padding:0.1rem 0; }
-.chat-text-input::placeholder { color:var(--muted); }
-.chat-send { background:var(--oxblood); border:none; color:var(--cream); font-family:'Inter',sans-serif; font-size:0.68rem; letter-spacing:0.1em; text-transform:uppercase; padding:0.5rem 1rem; cursor:pointer; }
-.chat-send:hover { background:var(--oxblood-light); }
-.host-badge { display:inline-block; font-size:0.58rem; letter-spacing:0.1em; text-transform:uppercase; background:var(--oxblood); color:var(--cream); padding:0.08rem 0.4rem; vertical-align:middle; margin-left:4px; }
-.modal-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.9); z-index:200; align-items:center; justify-content:center; padding:2rem; }
-.modal-overlay.open { display:flex; }
-.modal-box { background:var(--surface); border:0.5px solid var(--surface3); max-width:680px; width:100%; max-height:90vh; overflow-y:auto; }
-.modal-header { display:flex; align-items:center; justify-content:space-between; padding:1rem 1.25rem; border-bottom:0.5px solid var(--surface3); position:sticky; top:0; background:var(--surface); }
-.modal-title { font-family:'Playfair Display',serif; font-size:1rem; color:var(--cream); }
-.modal-close { background:none; border:none; color:var(--muted); font-size:1.1rem; cursor:pointer; }
-.modal-close:hover { color:var(--cream); }
-.modal-body { padding:1.25rem; }
-.modal-media { background:var(--surface2); width:100%; margin-bottom:1rem; }
-.modal-media video,.modal-media img { width:100%; display:block; }
-.modal-media audio { width:100%; padding:1rem; display:block; }
-.modal-no-media { aspect-ratio:16/9; display:flex; align-items:center; justify-content:center; }
-.modal-no-media span { font-size:0.78rem; color:var(--muted); letter-spacing:0.1em; text-transform:uppercase; }
-.modal-desc { font-size:0.85rem; color:var(--text-dim); line-height:1.7; }
-.admin-container { max-width:840px; margin:0 auto; padding:3rem 2rem; }
-.admin-section { margin-bottom:3rem; }
-.admin-section-title { font-size:1.25rem; color:var(--cream); margin-bottom:0.35rem; }
-.admin-section-sub { font-size:0.82rem; color:var(--text-dim); margin-bottom:1.5rem; }
-.admin-form { background:var(--surface); border:0.5px solid var(--surface3); padding:1.75rem; }
-.form-row { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-bottom:1rem; }
-.form-row.full { grid-template-columns:1fr; }
-.form-group { display:flex; flex-direction:column; gap:0.4rem; }
-label { font-size:0.67rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted); }
-input[type=text],input[type=date],input[type=time],select,textarea { background:var(--surface2); border:0.5px solid var(--surface3); color:var(--text); font-family:'Inter',sans-serif; font-size:0.84rem; padding:0.58rem 0.82rem; outline:none; transition:border-color 0.15s; width:100%; }
-input:focus,select:focus,textarea:focus { border-color:var(--gold-dim); }
-textarea { resize:vertical; min-height:78px; }
-select option { background:var(--surface2); }
-.upload-zone { border:1px dashed var(--surface3); padding:1.75rem; text-align:center; cursor:pointer; transition:all 0.2s; background:var(--surface2); margin-bottom:0.75rem; }
-.upload-zone:hover { border-color:var(--gold-dim); }
-.upload-zone input[type=file] { display:none; }
-.upload-zone-icon { font-size:1.4rem; margin-bottom:0.4rem; color:var(--muted); }
-.upload-zone-text { font-size:0.82rem; color:var(--text-dim); margin-bottom:0.3rem; }
-.upload-zone-sub { font-size:0.7rem; color:var(--muted); }
-.upload-preview { background:var(--surface2); border:0.5px solid var(--surface3); padding:0.7rem 1rem; display:flex; align-items:center; gap:0.7rem; }
-.upload-preview-name { flex:1; font-size:0.8rem; color:var(--cream); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
-.upload-preview-size { font-size:0.7rem; color:var(--muted); }
-.upload-preview-remove { background:none; border:none; color:var(--muted); cursor:pointer; }
-.upload-preview-remove:hover { color:#E07070; }
-.form-submit { background:var(--oxblood); color:var(--cream); border:none; font-family:'Inter',sans-serif; font-size:0.73rem; letter-spacing:0.15em; text-transform:uppercase; padding:0.73rem 2rem; cursor:pointer; transition:background 0.2s; margin-top:0.5rem; }
-.form-submit:hover { background:var(--oxblood-light); }
-.form-submit:disabled { opacity:0.5; cursor:not-allowed; }
-.admin-post-row { display:flex; align-items:center; gap:0.7rem; background:var(--surface); border:0.5px solid var(--surface3); padding:0.72rem 1rem; margin-bottom:1px; }
-.admin-post-date { font-size:0.7rem; color:var(--muted); min-width:76px; flex-shrink:0; }
-.admin-post-title { flex:1; font-size:0.82rem; color:var(--cream); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
-.admin-post-type { font-size:0.6rem; letter-spacing:0.08em; text-transform:uppercase; padding:0.14rem 0.48rem; flex-shrink:0; }
-.admin-post-media { font-size:0.67rem; color:var(--text-dim); flex-shrink:0; }
-.admin-delete { background:none; border:none; color:var(--muted); cursor:pointer; font-size:0.7rem; padding:0.2rem 0.4rem; flex-shrink:0; }
-.admin-delete:hover { color:#E07070; }
-.empty-state { text-align:center; padding:2.5rem; color:var(--muted); font-size:0.84rem; border:0.5px dashed var(--surface3); }
-.toast { position:fixed; bottom:2rem; right:2rem; background:var(--surface2); border:0.5px solid var(--gold-dim); color:var(--gold); font-size:0.78rem; letter-spacing:0.08em; padding:0.75rem 1.25rem; opacity:0; transition:opacity 0.3s; pointer-events:none; z-index:300; }
-.toast.show { opacity:1; }
-@media(max-width:600px) {
-  nav { padding:1rem; } .hero { padding:3rem 1rem 2rem; } .hero-stats { gap:1.5rem; }
-  .form-row { grid-template-columns:1fr; } .chat-wrap { padding:1rem; } .chat-name-input { width:82px; }
+h1,h2,h3,h4{font-family:'Playfair Display',serif;font-weight:400;}
+
+/* ANNOUNCEMENT BANNER */
+.announcement{display:none;background:var(--oxblood);color:var(--cream);text-align:center;padding:0.6rem 2rem;font-size:0.8rem;letter-spacing:0.05em;position:relative;}
+.announcement.visible{display:block;}
+.announcement-close{position:absolute;right:1rem;top:50%;transform:translateY(-50%);background:none;border:none;color:var(--cream);cursor:pointer;font-size:1rem;opacity:0.7;}
+.announcement-close:hover{opacity:1;}
+
+/* NAV */
+nav{display:flex;align-items:center;justify-content:space-between;padding:1.25rem 2rem;border-bottom:0.5px solid #252A1E;position:sticky;top:0;background:rgba(10,12,9,0.96);z-index:100;}
+.nav-logo{font-family:'Playfair Display',serif;font-size:1.1rem;letter-spacing:0.08em;color:var(--gold);}
+.nav-logo span{color:var(--text-dim);font-size:0.72rem;display:block;font-family:'Inter',sans-serif;letter-spacing:0.15em;text-transform:uppercase;font-weight:400;}
+.nav-tabs{display:flex;gap:0.25rem;}
+.nav-btn{background:none;border:0.5px solid var(--surface3);color:var(--text-dim);font-family:'Inter',sans-serif;font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;padding:0.4rem 1rem;cursor:pointer;transition:all 0.2s;}
+.nav-btn:hover{border-color:var(--gold);color:var(--gold);}
+.nav-btn.active{border-color:var(--oxblood);color:var(--cream);background:var(--oxblood);}
+
+.view{display:none;}.view.active{display:block;}
+
+/* FOUNDING COUNTER */
+.founding-bar{background:rgba(19,21,16,0.9);border-bottom:0.5px solid var(--surface3);padding:0.75rem 2rem;display:flex;align-items:center;justify-content:center;gap:1.5rem;flex-wrap:wrap;}
+.founding-track{display:flex;align-items:center;gap:0.75rem;}
+.founding-dots{display:flex;gap:4px;}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--surface3);}
+.dot.filled{background:var(--oxblood);}
+.founding-text{font-size:0.78rem;color:var(--text-dim);}
+.founding-text strong{color:var(--gold);font-weight:500;}
+.founding-urgency{font-size:0.72rem;color:#E07070;letter-spacing:0.05em;}
+
+/* HERO */
+.hero{text-align:center;padding:4rem 2rem 3rem;border-bottom:0.5px solid var(--surface3);}
+.hero-eyebrow{font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;}
+.hero h1{font-size:clamp(2.5rem,6vw,4.2rem);line-height:1.08;color:var(--cream);margin-bottom:1rem;}
+.hero h1 em{color:var(--gold);font-style:italic;}
+.hero-sub{font-size:0.95rem;color:var(--text-dim);max-width:420px;margin:0 auto 2rem;line-height:1.8;}
+.hero-stats{display:flex;gap:2.5rem;justify-content:center;margin-bottom:2rem;flex-wrap:wrap;}
+.hero-stat-num{font-family:'Playfair Display',serif;font-size:1.75rem;color:var(--cream);}
+.hero-stat-label{font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);}
+.cta-group{display:flex;gap:0.75rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.5rem;}
+.join-btn{background:var(--oxblood);color:var(--cream);border:none;font-family:'Inter',sans-serif;font-size:0.8rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.9rem 2.5rem;cursor:pointer;transition:background 0.2s;text-decoration:none;display:inline-block;}
+.join-btn:hover{background:var(--oxblood-light);}
+.waitlist-btn{background:none;color:var(--text-dim);border:0.5px solid var(--surface3);font-family:'Inter',sans-serif;font-size:0.8rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.9rem 2rem;cursor:pointer;transition:all 0.2s;}
+.waitlist-btn:hover{border-color:var(--gold-dim);color:var(--gold);}
+
+/* WAITLIST FORM */
+.waitlist-form{max-width:400px;margin:0 auto;display:none;padding:1.25rem;background:var(--surface);border:0.5px solid var(--surface3);}
+.waitlist-form.open{display:block;}
+.waitlist-form p{font-size:0.82rem;color:var(--text-dim);margin-bottom:1rem;}
+.waitlist-row{display:flex;gap:0.5rem;}
+.waitlist-input{flex:1;background:var(--surface2);border:0.5px solid var(--surface3);color:var(--text);font-family:'Inter',sans-serif;font-size:0.82rem;padding:0.55rem 0.75rem;outline:none;}
+.waitlist-input:focus{border-color:var(--gold-dim);}
+.waitlist-submit{background:var(--oxblood);color:var(--cream);border:none;font-family:'Inter',sans-serif;font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;padding:0.55rem 1.1rem;cursor:pointer;white-space:nowrap;}
+
+/* SUB NAV */
+.sub-nav-wrap{border-bottom:0.5px solid var(--surface3);background:rgba(10,12,9,0.7);overflow-x:auto;}
+.sub-nav{display:flex;max-width:900px;margin:0 auto;padding:0 2rem;}
+.sub-tab{background:none;border:none;border-bottom:2px solid transparent;color:var(--text-dim);font-family:'Inter',sans-serif;font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;padding:1rem 1rem;cursor:pointer;transition:all 0.15s;margin-bottom:-0.5px;white-space:nowrap;}
+.sub-tab:hover{color:var(--cream);}
+.sub-tab.active{border-bottom-color:var(--gold);color:var(--gold);}
+
+/* FEED */
+.feed-container{max-width:800px;margin:0 auto;padding:2rem;}
+.feed-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.5rem;flex-wrap:wrap;gap:0.75rem;}
+.feed-header h2{font-size:1.15rem;color:var(--cream);}
+.feed-filter{display:flex;gap:0.4rem;flex-wrap:wrap;}
+.filter-btn{background:none;border:0.5px solid var(--surface3);color:var(--text-dim);font-family:'Inter',sans-serif;font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;padding:0.28rem 0.75rem;cursor:pointer;transition:all 0.15s;}
+.filter-btn:hover,.filter-btn.on{border-color:var(--moss-pale);color:#7AB855;}
+.post-card{background:rgba(19,21,16,0.9);border:0.5px solid var(--surface3);margin-bottom:1px;}
+.post-card.upcoming{border-left:2px solid var(--gold-dim);}
+.post-card.live-post{border-left:2px solid var(--oxblood);}
+.post-inner{padding:1.2rem 1.5rem;display:flex;gap:1.25rem;align-items:flex-start;}
+.post-date-col{min-width:46px;text-align:center;padding-top:2px;}
+.post-date-day{font-family:'Playfair Display',serif;font-size:1.4rem;color:var(--cream);line-height:1;}
+.post-date-month{font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);}
+.post-divider{width:0.5px;background:var(--surface3);align-self:stretch;flex-shrink:0;}
+.post-body{flex:1;min-width:0;}
+.post-meta{display:flex;align-items:center;gap:0.6rem;margin-bottom:0.35rem;flex-wrap:wrap;}
+.post-type{font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.18rem 0.55rem;}
+.type-research{background:#1A1A2E;color:#7F77DD;}
+.type-poem{background:#1A0E0E;color:#C97070;}
+.type-chapter{background:#0E1A0A;color:#7AB855;}
+.type-process{background:var(--surface2);color:var(--text-dim);border:0.5px solid var(--surface3);}
+.type-live{background:#2A0E0E;color:#E07070;}
+.type-script{background:#0E1520;color:#5BA8D4;}
+.type-novel{background:#1A150E;color:#C9A84C;}
+.type-other{background:var(--surface2);color:var(--text-dim);border:0.5px solid var(--surface3);}
+.post-status-badge{font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);}
+.post-status-badge.upcoming{color:var(--gold-dim);}
+.post-title{font-family:'Playfair Display',serif;font-size:1rem;color:var(--cream);margin-bottom:0.3rem;line-height:1.4;}
+.post-desc{font-size:0.82rem;color:var(--text-dim);line-height:1.7;margin-bottom:0.75rem;}
+.post-action{background:none;border:0.5px solid var(--surface3);color:var(--text-dim);font-family:'Inter',sans-serif;font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;padding:0.32rem 0.85rem;cursor:pointer;transition:all 0.15s;}
+.post-action:hover{border-color:var(--gold-dim);color:var(--gold);}
+.post-lock{font-size:0.73rem;color:var(--muted);}
+.media-thumb{margin-top:0.7rem;}
+.media-thumb video,.media-thumb img{width:100%;max-height:180px;object-fit:cover;display:block;}
+.media-thumb audio{width:100%;}
+
+/* CHARACTERS */
+.chars-container{max-width:900px;margin:0 auto;padding:2rem;}
+.chars-intro{font-size:0.88rem;color:var(--text-dim);line-height:1.8;margin-bottom:2rem;max-width:560px;}
+.chars-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1px;margin-bottom:2.5rem;}
+.char-card{background:rgba(19,21,16,0.9);border:0.5px solid var(--surface3);padding:1.5rem;cursor:pointer;transition:background 0.2s;}
+.char-card:hover{background:rgba(30,28,22,0.95);}
+.char-role{font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem;}
+.char-name{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--cream);margin-bottom:0.4rem;}
+.char-tag{display:inline-block;font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;padding:0.15rem 0.5rem;margin-bottom:0.75rem;}
+.tag-fmc{background:#1A0E0E;color:#C97070;}
+.tag-mmc{background:#0E1520;color:#5BA8D4;}
+.tag-antag{background:#2A0E0E;color:#E07070;}
+.tag-support{background:var(--surface2);color:var(--text-dim);border:0.5px solid var(--surface3);}
+.char-desc{font-size:0.8rem;color:var(--text-dim);line-height:1.65;margin-bottom:0.75rem;}
+.char-read-more{font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold-dim);}
+.char-lore{display:none;margin-top:0.75rem;padding-top:0.75rem;border-top:0.5px solid var(--surface3);}
+.char-lore.open{display:block;}
+.char-lore p{font-size:0.8rem;color:var(--text-dim);line-height:1.7;}
+.char-lore-label{font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold-dim);margin-bottom:0.35rem;}
+
+/* MOODBOARD */
+.mood-container{max-width:900px;margin:0 auto;padding:2rem;}
+.mood-intro{font-size:0.88rem;color:var(--text-dim);line-height:1.8;margin-bottom:1.5rem;max-width:560px;}
+.mood-tags{display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:2rem;}
+.mood-tag{background:none;border:0.5px solid var(--surface3);color:var(--text-dim);font-family:'Inter',sans-serif;font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;padding:0.28rem 0.75rem;cursor:pointer;transition:all 0.15s;}
+.mood-tag:hover,.mood-tag.on{border-color:var(--gold-dim);color:var(--gold);}
+.mood-grid{columns:3;gap:8px;margin-bottom:2rem;}
+.mood-item{break-inside:avoid;margin-bottom:8px;background:var(--surface);border:0.5px solid var(--surface3);overflow:hidden;}
+.mood-item-inner{padding:1.25rem;}
+.mood-symbol{font-size:2rem;margin-bottom:0.75rem;display:block;color:var(--gold);opacity:0.7;}
+.mood-item-title{font-family:'Playfair Display',serif;font-size:0.95rem;color:var(--cream);margin-bottom:0.35rem;}
+.mood-item-desc{font-size:0.78rem;color:var(--text-dim);line-height:1.6;}
+.mood-item-cat{font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-top:0.5rem;}
+@media(max-width:700px){.mood-grid{columns:2;}}
+@media(max-width:450px){.mood-grid{columns:1;}}
+
+/* READING LIST */
+.reading-container{max-width:800px;margin:0 auto;padding:2rem;}
+.reading-intro{font-size:0.88rem;color:var(--text-dim);line-height:1.8;margin-bottom:2rem;max-width:560px;}
+.reading-section-label{font-size:0.68rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold-dim);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:0.5px solid var(--surface3);}
+.book-list{display:flex;flex-direction:column;gap:1px;margin-bottom:2.5rem;}
+.book-row{background:rgba(19,21,16,0.9);border:0.5px solid var(--surface3);padding:1rem 1.25rem;display:flex;gap:1rem;align-items:flex-start;}
+.book-num{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--muted);min-width:24px;}
+.book-body{flex:1;}
+.book-title{font-family:'Playfair Display',serif;font-size:0.95rem;color:var(--cream);margin-bottom:0.2rem;}
+.book-author{font-size:0.75rem;color:var(--text-dim);}
+.book-note{font-size:0.75rem;color:var(--muted);font-style:italic;margin-top:0.3rem;}
+.book-cat{font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;padding:0.15rem 0.5rem;flex-shrink:0;}
+.cat-jung{background:#1A1A2E;color:#7F77DD;}
+.cat-myth{background:#0E1A0A;color:#7AB855;}
+.cat-neuro{background:#0E1520;color:#5BA8D4;}
+.cat-esoteric{background:#1A150E;color:#C9A84C;}
+.cat-fiction{background:#1A0E0E;color:#C97070;}
+
+/* POLLS */
+.polls-container{max-width:700px;margin:0 auto;padding:2rem;}
+.poll-card{background:rgba(19,21,16,0.9);border:0.5px solid var(--surface3);padding:1.5rem;margin-bottom:1.5rem;}
+.poll-question{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--cream);margin-bottom:0.35rem;}
+.poll-sub{font-size:0.78rem;color:var(--text-dim);margin-bottom:1.25rem;}
+.poll-options{display:flex;flex-direction:column;gap:0.5rem;margin-bottom:1rem;}
+.poll-option{background:none;border:0.5px solid var(--surface3);color:var(--text);font-family:'Inter',sans-serif;font-size:0.84rem;padding:0.65rem 1rem;cursor:pointer;transition:all 0.15s;text-align:left;display:flex;align-items:center;gap:0.75rem;}
+.poll-option:hover{border-color:var(--gold-dim);color:var(--gold);}
+.poll-option.voted{border-color:var(--oxblood);color:var(--cream);background:rgba(107,30,30,0.2);}
+.poll-bar-wrap{flex:1;background:var(--surface3);height:3px;border-radius:2px;}
+.poll-bar{height:3px;background:var(--oxblood);border-radius:2px;transition:width 0.4s;}
+.poll-pct{font-size:0.7rem;color:var(--muted);min-width:32px;text-align:right;}
+.poll-total{font-size:0.72rem;color:var(--muted);}
+
+/* CHAT */
+.chat-wrap{max-width:800px;margin:0 auto;padding:2rem;display:flex;flex-direction:column;height:calc(100vh - 280px);min-height:480px;}
+.chat-header{margin-bottom:1.1rem;}
+.chat-header h2{font-size:1.15rem;color:var(--cream);margin-bottom:0.2rem;}
+.chat-header p{font-size:0.8rem;color:var(--text-dim);}
+.chat-messages{flex:1;overflow-y:auto;display:flex;flex-direction:column;gap:0.9rem;padding-right:0.4rem;margin-bottom:1rem;}
+.chat-messages::-webkit-scrollbar{width:2px;}
+.chat-messages::-webkit-scrollbar-thumb{background:var(--surface3);}
+.chat-msg-row{display:flex;gap:0.7rem;align-items:flex-start;}
+.chat-msg-row.mine{flex-direction:row-reverse;}
+.chat-avatar{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.65rem;font-weight:500;flex-shrink:0;}
+.avatar-host{background:var(--oxblood);color:var(--cream);}
+.avatar-member{background:var(--surface3);color:var(--text-dim);}
+.chat-bubble-wrap{max-width:68%;}
+.chat-name{font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.22rem;}
+.chat-msg-row.mine .chat-name{text-align:right;}
+.chat-bubble{padding:0.6rem 0.95rem;font-size:0.84rem;line-height:1.6;}
+.bubble-host{background:var(--oxblood);color:var(--cream);}
+.bubble-member{background:var(--surface2);color:var(--text);border:0.5px solid var(--surface3);}
+.bubble-mine{background:var(--surface3);color:var(--cream);}
+.chat-time{font-size:0.6rem;color:var(--muted);margin-top:0.18rem;}
+.chat-msg-row.mine .chat-time{text-align:right;}
+.chat-input-area{border:0.5px solid var(--surface3);background:var(--surface);padding:0.8rem 1rem;display:flex;gap:0.7rem;align-items:flex-end;}
+.chat-name-input{background:var(--surface2);border:0.5px solid var(--surface3);color:var(--text);font-family:'Inter',sans-serif;font-size:0.82rem;padding:0.5rem 0.7rem;outline:none;width:110px;flex-shrink:0;}
+.chat-name-input:focus{border-color:var(--gold-dim);}
+.chat-text-input{flex:1;background:none;border:none;color:var(--text);font-family:'Inter',sans-serif;font-size:0.84rem;outline:none;resize:none;min-height:20px;max-height:72px;line-height:1.5;padding:0.1rem 0;}
+.chat-text-input::placeholder{color:var(--muted);}
+.chat-send{background:var(--oxblood);border:none;color:var(--cream);font-family:'Inter',sans-serif;font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;padding:0.5rem 1rem;cursor:pointer;}
+.chat-send:hover{background:var(--oxblood-light);}
+.host-badge{display:inline-block;font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;background:var(--oxblood);color:var(--cream);padding:0.08rem 0.4rem;vertical-align:middle;margin-left:4px;}
+
+/* MODAL */
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.9);z-index:200;align-items:center;justify-content:center;padding:2rem;}
+.modal-overlay.open{display:flex;}
+.modal-box{background:var(--surface);border:0.5px solid var(--surface3);max-width:680px;width:100%;max-height:90vh;overflow-y:auto;}
+.modal-header{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.25rem;border-bottom:0.5px solid var(--surface3);position:sticky;top:0;background:var(--surface);}
+.modal-title{font-family:'Playfair Display',serif;font-size:1rem;color:var(--cream);}
+.modal-close{background:none;border:none;color:var(--muted);font-size:1.1rem;cursor:pointer;}
+.modal-close:hover{color:var(--cream);}
+.modal-body{padding:1.25rem;}
+.modal-media{background:var(--surface2);width:100%;margin-bottom:1rem;}
+.modal-media video,.modal-media img{width:100%;display:block;}
+.modal-media audio{width:100%;padding:1rem;display:block;}
+.modal-no-media{aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;}
+.modal-no-media span{font-size:0.78rem;color:var(--muted);letter-spacing:0.1em;text-transform:uppercase;}
+.modal-desc{font-size:0.85rem;color:var(--text-dim);line-height:1.7;}
+
+/* ADMIN */
+.admin-container{max-width:860px;margin:0 auto;padding:3rem 2rem;}
+.admin-section{margin-bottom:3rem;}
+.admin-section-title{font-size:1.25rem;color:var(--cream);margin-bottom:0.35rem;}
+.admin-section-sub{font-size:0.82rem;color:var(--text-dim);margin-bottom:1.5rem;}
+.admin-form{background:var(--surface);border:0.5px solid var(--surface3);padding:1.75rem;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem;}
+.form-row.full{grid-template-columns:1fr;}
+.form-row.three{grid-template-columns:1fr 1fr 1fr;}
+.form-group{display:flex;flex-direction:column;gap:0.4rem;}
+label{font-size:0.67rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);}
+input[type=text],input[type=date],input[type=time],input[type=number],input[type=url],select,textarea{background:var(--surface2);border:0.5px solid var(--surface3);color:var(--text);font-family:'Inter',sans-serif;font-size:0.84rem;padding:0.58rem 0.82rem;outline:none;transition:border-color 0.15s;width:100%;}
+input:focus,select:focus,textarea:focus{border-color:var(--gold-dim);}
+textarea{resize:vertical;min-height:78px;}
+select option{background:var(--surface2);}
+.upload-zone{border:1px dashed var(--surface3);padding:1.75rem;text-align:center;cursor:pointer;transition:all 0.2s;background:var(--surface2);margin-bottom:0.75rem;}
+.upload-zone:hover{border-color:var(--gold-dim);}
+.upload-zone input[type=file]{display:none;}
+.upload-zone-icon{font-size:1.4rem;margin-bottom:0.4rem;color:var(--muted);}
+.upload-zone-text{font-size:0.82rem;color:var(--text-dim);margin-bottom:0.3rem;}
+.upload-zone-sub{font-size:0.7rem;color:var(--muted);}
+.upload-preview{background:var(--surface2);border:0.5px solid var(--surface3);padding:0.7rem 1rem;display:flex;align-items:center;gap:0.7rem;}
+.upload-preview-name{flex:1;font-size:0.8rem;color:var(--cream);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.upload-preview-size{font-size:0.7rem;color:var(--muted);}
+.upload-preview-remove{background:none;border:none;color:var(--muted);cursor:pointer;}
+.upload-preview-remove:hover{color:#E07070;}
+.form-submit{background:var(--oxblood);color:var(--cream);border:none;font-family:'Inter',sans-serif;font-size:0.73rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.73rem 2rem;cursor:pointer;transition:background 0.2s;margin-top:0.5rem;}
+.form-submit:hover{background:var(--oxblood-light);}
+.form-submit:disabled{opacity:0.5;cursor:not-allowed;}
+.admin-row{display:flex;align-items:center;gap:0.7rem;background:var(--surface);border:0.5px solid var(--surface3);padding:0.72rem 1rem;margin-bottom:1px;}
+.admin-row-main{flex:1;font-size:0.82rem;color:var(--cream);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.admin-row-sub{font-size:0.7rem;color:var(--muted);flex-shrink:0;}
+.admin-delete{background:none;border:none;color:var(--muted);cursor:pointer;font-size:0.7rem;padding:0.2rem 0.4rem;flex-shrink:0;}
+.admin-delete:hover{color:#E07070;}
+.admin-tabs{display:flex;gap:0.25rem;margin-bottom:1.5rem;flex-wrap:wrap;}
+.admin-tab{background:none;border:0.5px solid var(--surface3);color:var(--text-dim);font-family:'Inter',sans-serif;font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;padding:0.38rem 0.9rem;cursor:pointer;transition:all 0.15s;}
+.admin-tab:hover{border-color:var(--gold-dim);color:var(--gold);}
+.admin-tab.active{background:var(--surface);border-color:var(--gold-dim);color:var(--gold);}
+.admin-panel{display:none;}.admin-panel.active{display:block;}
+.empty-state{text-align:center;padding:2.5rem;color:var(--muted);font-size:0.84rem;border:0.5px dashed var(--surface3);}
+
+.toast{position:fixed;bottom:2rem;right:2rem;background:var(--surface2);border:0.5px solid var(--gold-dim);color:var(--gold);font-size:0.78rem;letter-spacing:0.08em;padding:0.75rem 1.25rem;opacity:0;transition:opacity 0.3s;pointer-events:none;z-index:300;}
+.toast.show{opacity:1;}
+
+@media(max-width:600px){
+  nav{padding:1rem;}.hero{padding:3rem 1rem 2rem;}.hero-stats{gap:1.5rem;}
+  .form-row,.form-row.three{grid-template-columns:1fr;}.chat-wrap{padding:1rem;}.chat-name-input{width:82px;}
+  .chars-grid{grid-template-columns:1fr;}.mood-grid{columns:1;}
 }
 </style>
 </head>
 <body>
+
+<div class="announcement" id="announcement-bar">
+  <span id="announcement-text"></span>
+  <button class="announcement-close" onclick="closeAnnouncement()">✕</button>
+</div>
 
 <nav>
   <div class="nav-logo">Kanis Lupus <span>Founding Circle</span></div>
@@ -179,7 +297,17 @@ select option { background:var(--surface2); }
   </div>
 </nav>
 
+<!-- SUBSCRIBER VIEW -->
 <div id="view-subscriber" class="view active">
+
+  <div class="founding-bar">
+    <div class="founding-track">
+      <div class="founding-dots" id="founding-dots"></div>
+      <div class="founding-text" id="founding-text"></div>
+    </div>
+    <div class="founding-urgency" id="founding-urgency"></div>
+  </div>
+
   <div class="hero">
     <p class="hero-eyebrow">Founding circle — $50 / month</p>
     <h1>Made of<br><em>wild light</em></h1>
@@ -189,16 +317,31 @@ select option { background:var(--surface2); }
       <div><div class="hero-stat-num">10</div><div class="hero-stat-label">books in progress</div></div>
       <div><div class="hero-stat-num" id="stat-chat">—</div><div class="hero-stat-label">chat messages</div></div>
     </div>
-    <button class="join-btn">Join the founding circle</button>
+    <div class="cta-group">
+      <button class="join-btn" id="join-btn-main">Join the founding circle</button>
+      <button class="waitlist-btn" onclick="toggleWaitlist()">Join the waitlist</button>
+    </div>
+    <div class="waitlist-form" id="waitlist-form">
+      <p>Leave your email and I'll reach out when a spot opens or the price changes.</p>
+      <div class="waitlist-row">
+        <input class="waitlist-input" type="text" id="waitlist-email" placeholder="your@email.com">
+        <button class="waitlist-submit" onclick="submitWaitlist()">Notify me</button>
+      </div>
+    </div>
   </div>
 
   <div class="sub-nav-wrap">
     <div class="sub-nav">
       <button class="sub-tab active" onclick="switchSubTab('feed',this)">The Work</button>
+      <button class="sub-tab" onclick="switchSubTab('characters',this)">Characters</button>
+      <button class="sub-tab" onclick="switchSubTab('moodboard',this)">Mood board</button>
+      <button class="sub-tab" onclick="switchSubTab('reading',this)">Reading list</button>
+      <button class="sub-tab" onclick="switchSubTab('polls',this)">Polls</button>
       <button class="sub-tab" onclick="switchSubTab('chat',this)">Live chat</button>
     </div>
   </div>
 
+  <!-- FEED -->
   <div id="tab-feed">
     <div class="feed-container">
       <div class="feed-header">
@@ -218,6 +361,48 @@ select option { background:var(--surface2); }
     </div>
   </div>
 
+  <!-- CHARACTERS -->
+  <div id="tab-characters" style="display:none;">
+    <div class="chars-container">
+      <p class="chars-intro">The cast of The Blood Harmonic. Click any character to unlock deeper lore — their shadow, their wound, what they want and what they're afraid to want.</p>
+      <div class="chars-grid" id="chars-grid"></div>
+    </div>
+  </div>
+
+  <!-- MOODBOARD -->
+  <div id="tab-moodboard" style="display:none;">
+    <div class="mood-container">
+      <p class="mood-intro">The aesthetic and research world behind The Blood Harmonic. Everything feeding the atmosphere, the imagery, the feeling of the series.</p>
+      <div class="mood-tags">
+        <button class="mood-tag on" onclick="filterMood('all',this)">All</button>
+        <button class="mood-tag" onclick="filterMood('aesthetic',this)">Aesthetic</button>
+        <button class="mood-tag" onclick="filterMood('research',this)">Research</button>
+        <button class="mood-tag" onclick="filterMood('music',this)">Music & sound</button>
+        <button class="mood-tag" onclick="filterMood('place',this)">Place</button>
+        <button class="mood-tag" onclick="filterMood('symbol',this)">Symbol</button>
+      </div>
+      <div class="mood-grid" id="mood-grid"></div>
+    </div>
+  </div>
+
+  <!-- READING LIST -->
+  <div id="tab-reading" style="display:none;">
+    <div class="reading-container">
+      <p class="reading-intro">The actual books and sources I'm reading and pulling from as I write. Updated as I go. This is the intellectual architecture of the series.</p>
+      <div id="reading-list-render"></div>
+    </div>
+  </div>
+
+  <!-- POLLS -->
+  <div id="tab-polls" style="display:none;">
+    <div class="polls-container">
+      <h2 style="font-size:1.15rem;color:var(--cream);margin-bottom:0.5rem;">Your voice shapes the series</h2>
+      <p style="font-size:0.82rem;color:var(--text-dim);margin-bottom:2rem;">Founding members get real input. Vote on cover direction, character decisions, release order. Results are real.</p>
+      <div id="polls-list"></div>
+    </div>
+  </div>
+
+  <!-- CHAT -->
   <div id="tab-chat" style="display:none;">
     <div class="chat-wrap">
       <div class="chat-header">
@@ -232,71 +417,197 @@ select option { background:var(--surface2); }
       </div>
     </div>
   </div>
+
 </div>
 
+<!-- ADMIN VIEW -->
 <div id="view-admin" class="view">
   <div class="admin-container">
-    <div class="admin-section">
-      <h2 class="admin-section-title">Schedule a post</h2>
-      <p class="admin-section-sub">Upload video, audio, or images directly. Posts auto-publish on their scheduled date.</p>
-      <div class="admin-form">
-        <div class="form-row">
-          <div class="form-group">
-            <label>Post title</label>
-            <input type="text" id="f-title" placeholder="e.g. Research drop — Jungian archetypes">
-          </div>
-          <div class="form-group">
-            <label>Content type</label>
-            <select id="f-type">
-              <option value="research">Research & inspiration</option>
-              <option value="poem">Poem reading</option>
-              <option value="chapter">Early chapter</option>
-              <option value="process">Process vlog</option>
-              <option value="live">Live session</option>
-              <option value="novel">Novel excerpt</option>
-              <option value="script">Script / screenplay</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label>Publish date</label>
-            <input type="date" id="f-date">
-          </div>
-          <div class="form-group">
-            <label>Publish time</label>
-            <input type="time" id="f-time" value="09:00">
-          </div>
-        </div>
-        <div class="form-row full">
-          <div class="form-group">
-            <label>Description</label>
-            <textarea id="f-desc" placeholder="What's this post about? What inspired it?"></textarea>
-          </div>
-        </div>
-        <div class="form-row full">
-          <div class="form-group">
-            <label>Upload media (video, audio, or image — no link needed)</label>
-            <div class="upload-zone" onclick="document.getElementById('f-file').click()" ondragover="event.preventDefault();this.style.borderColor='var(--gold-dim)'" ondragleave="this.style.borderColor=''" ondrop="event.preventDefault();this.style.borderColor='';processFile(event.dataTransfer.files[0])">
-              <input type="file" id="f-file" accept="video/*,audio/*,image/*" onchange="processFile(this.files[0])">
-              <div class="upload-zone-icon">↑</div>
-              <div class="upload-zone-text">Click to upload or drag and drop</div>
-              <div class="upload-zone-sub">Video, Audio, Image — no link needed</div>
-            </div>
-            <div id="upload-preview-area"></div>
-          </div>
-        </div>
-        <button class="form-submit" id="submit-btn" onclick="addPost()">Schedule post</button>
+    <div style="margin-bottom:2rem;">
+      <h2 style="font-size:1.5rem;color:var(--cream);margin-bottom:1rem;">Admin panel</h2>
+      <div class="admin-tabs">
+        <button class="admin-tab active" onclick="switchAdminTab('posts',this)">Posts</button>
+        <button class="admin-tab" onclick="switchAdminTab('announcement',this)">Announcement</button>
+        <button class="admin-tab" onclick="switchAdminTab('founding',this)">Founding counter</button>
+        <button class="admin-tab" onclick="switchAdminTab('polls',this)">Polls</button>
+        <button class="admin-tab" onclick="switchAdminTab('reading',this)">Reading list</button>
+        <button class="admin-tab" onclick="switchAdminTab('moodboard',this)">Mood board</button>
+        <button class="admin-tab" onclick="switchAdminTab('waitlist',this)">Waitlist</button>
       </div>
     </div>
-    <div class="admin-section">
-      <h3 style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--cream);margin-bottom:1rem;">All posts</h3>
-      <div id="admin-list"></div>
+
+    <!-- POSTS PANEL -->
+    <div class="admin-panel active" id="panel-posts">
+      <div class="admin-section">
+        <h2 class="admin-section-title">Schedule a post</h2>
+        <p class="admin-section-sub">Upload video, audio, or images directly. Posts auto-publish on their scheduled date.</p>
+        <div class="admin-form">
+          <div class="form-row">
+            <div class="form-group"><label>Post title</label><input type="text" id="f-title" placeholder="e.g. Research drop — Jungian archetypes"></div>
+            <div class="form-group"><label>Content type</label>
+              <select id="f-type">
+                <option value="research">Research & inspiration</option>
+                <option value="poem">Poem reading</option>
+                <option value="chapter">Early chapter</option>
+                <option value="process">Process vlog</option>
+                <option value="live">Live session</option>
+                <option value="novel">Novel excerpt</option>
+                <option value="script">Script / screenplay</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Publish date</label><input type="date" id="f-date"></div>
+            <div class="form-group"><label>Publish time</label><input type="time" id="f-time" value="09:00"></div>
+          </div>
+          <div class="form-row full"><div class="form-group"><label>Description</label><textarea id="f-desc" placeholder="What's this post about?"></textarea></div></div>
+          <div class="form-row full">
+            <div class="form-group">
+              <label>Upload media (video, audio, or image)</label>
+              <div class="upload-zone" onclick="document.getElementById('f-file').click()" ondragover="event.preventDefault();this.style.borderColor='var(--gold-dim)'" ondragleave="this.style.borderColor=''" ondrop="event.preventDefault();this.style.borderColor='';processFile(event.dataTransfer.files[0])">
+                <input type="file" id="f-file" accept="video/*,audio/*,image/*" onchange="processFile(this.files[0])">
+                <div class="upload-zone-icon">↑</div>
+                <div class="upload-zone-text">Click to upload or drag and drop</div>
+                <div class="upload-zone-sub">Video, Audio, Image — no link needed</div>
+              </div>
+              <div id="upload-preview-area"></div>
+            </div>
+          </div>
+          <button class="form-submit" id="submit-btn" onclick="addPost()">Schedule post</button>
+        </div>
+      </div>
+      <div class="admin-section">
+        <h3 style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--cream);margin-bottom:1rem;">All posts</h3>
+        <div id="admin-list"></div>
+      </div>
     </div>
+
+    <!-- ANNOUNCEMENT PANEL -->
+    <div class="admin-panel" id="panel-announcement">
+      <div class="admin-section">
+        <h2 class="admin-section-title">Announcement banner</h2>
+        <p class="admin-section-sub">Pin a message at the top of the page. Members can dismiss it.</p>
+        <div class="admin-form">
+          <div class="form-row full"><div class="form-group"><label>Announcement text</label><input type="text" id="ann-text" placeholder="e.g. Chapter 4 drops Friday — live Q&A to follow"></div></div>
+          <div style="display:flex;gap:0.75rem;margin-top:0.5rem;">
+            <button class="form-submit" onclick="setAnnouncement()">Post announcement</button>
+            <button class="form-submit" style="background:var(--surface3);" onclick="clearAnnouncement()">Clear</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOUNDING COUNTER PANEL -->
+    <div class="admin-panel" id="panel-founding">
+      <div class="admin-section">
+        <h2 class="admin-section-title">Founding member counter</h2>
+        <p class="admin-section-sub">Update the founding member count shown on the member page. Creates urgency as spots fill.</p>
+        <div class="admin-form">
+          <div class="form-row">
+            <div class="form-group"><label>Current members</label><input type="number" id="founding-current" min="0" max="20" value="0"></div>
+            <div class="form-group"><label>Total spots available</label><input type="number" id="founding-total" min="1" value="20"></div>
+          </div>
+          <div class="form-row full"><div class="form-group"><label>Stripe payment link</label><input type="url" id="stripe-link" placeholder="https://buy.stripe.com/..."></div></div>
+          <button class="form-submit" onclick="saveFoundingSettings()">Save</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- POLLS PANEL -->
+    <div class="admin-panel" id="panel-polls">
+      <div class="admin-section">
+        <h2 class="admin-section-title">Create a poll</h2>
+        <p class="admin-section-sub">Let founding members vote on real decisions — cover direction, chapter order, character choices.</p>
+        <div class="admin-form">
+          <div class="form-row full"><div class="form-group"><label>Question</label><input type="text" id="poll-q" placeholder="e.g. Which cover direction speaks to you?"></div></div>
+          <div class="form-row full"><div class="form-group"><label>Sub-text (optional)</label><input type="text" id="poll-sub" placeholder="e.g. These are the two directions the artist has proposed"></div></div>
+          <div class="form-row full"><div class="form-group"><label>Option 1</label><input type="text" id="poll-o1" placeholder="Dark & minimal"></div></div>
+          <div class="form-row full"><div class="form-group"><label>Option 2</label><input type="text" id="poll-o2" placeholder="Rich & ornate"></div></div>
+          <div class="form-row full"><div class="form-group"><label>Option 3 (optional)</label><input type="text" id="poll-o3" placeholder=""></div></div>
+          <div class="form-row full"><div class="form-group"><label>Option 4 (optional)</label><input type="text" id="poll-o4" placeholder=""></div></div>
+          <button class="form-submit" onclick="addPoll()">Create poll</button>
+        </div>
+      </div>
+      <div class="admin-section">
+        <h3 style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--cream);margin-bottom:1rem;">Active polls</h3>
+        <div id="admin-polls-list"></div>
+      </div>
+    </div>
+
+    <!-- READING LIST PANEL -->
+    <div class="admin-panel" id="panel-reading">
+      <div class="admin-section">
+        <h2 class="admin-section-title">Add to reading list</h2>
+        <p class="admin-section-sub">The books and sources you're pulling from. Members see this as a live updated list.</p>
+        <div class="admin-form">
+          <div class="form-row">
+            <div class="form-group"><label>Title</label><input type="text" id="book-title" placeholder="e.g. The Archetypes and the Collective Unconscious"></div>
+            <div class="form-group"><label>Author</label><input type="text" id="book-author" placeholder="e.g. Carl Jung"></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Category</label>
+              <select id="book-cat">
+                <option value="jung">Jungian psychology</option>
+                <option value="myth">Mythology & folklore</option>
+                <option value="neuro">Neuroscience</option>
+                <option value="esoteric">Esoteric & Hermetic</option>
+                <option value="fiction">Fiction reference</option>
+              </select>
+            </div>
+            <div class="form-group"><label>Your note (optional)</label><input type="text" id="book-note" placeholder="Why you're reading it"></div>
+          </div>
+          <button class="form-submit" onclick="addBook()">Add book</button>
+        </div>
+      </div>
+      <div class="admin-section">
+        <h3 style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--cream);margin-bottom:1rem;">Current reading list</h3>
+        <div id="admin-books-list"></div>
+      </div>
+    </div>
+
+    <!-- MOODBOARD PANEL -->
+    <div class="admin-panel" id="panel-moodboard">
+      <div class="admin-section">
+        <h2 class="admin-section-title">Add to mood board</h2>
+        <p class="admin-section-sub">Aesthetic references, symbols, places, music — the world of The Blood Harmonic.</p>
+        <div class="admin-form">
+          <div class="form-row">
+            <div class="form-group"><label>Title</label><input type="text" id="mood-title" placeholder="e.g. Shadow and bone light"></div>
+            <div class="form-group"><label>Category</label>
+              <select id="mood-cat">
+                <option value="aesthetic">Aesthetic</option>
+                <option value="research">Research</option>
+                <option value="music">Music & sound</option>
+                <option value="place">Place</option>
+                <option value="symbol">Symbol</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row full"><div class="form-group"><label>Description</label><textarea id="mood-desc" placeholder="What this is and why it belongs in the world…"></textarea></div></div>
+          <div class="form-row full"><div class="form-group"><label>Symbol / emoji to represent it</label><input type="text" id="mood-symbol" placeholder="e.g. ◈ ⬡ ☽ ✦" maxlength="4"></div></div>
+          <button class="form-submit" onclick="addMoodItem()">Add to board</button>
+        </div>
+      </div>
+      <div class="admin-section">
+        <h3 style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--cream);margin-bottom:1rem;">Current board</h3>
+        <div id="admin-mood-list"></div>
+      </div>
+    </div>
+
+    <!-- WAITLIST PANEL -->
+    <div class="admin-panel" id="panel-waitlist">
+      <div class="admin-section">
+        <h2 class="admin-section-title">Waitlist</h2>
+        <p class="admin-section-sub">People who signed up but haven't joined yet.</p>
+        <div id="waitlist-admin-list"></div>
+      </div>
+    </div>
+
   </div>
 </div>
 
+<!-- CONTENT MODAL -->
 <div class="modal-overlay" id="modal" onclick="if(event.target===this)closeModalDirect()">
   <div class="modal-box">
     <div class="modal-header">
@@ -313,42 +624,161 @@ select option { background:var(--surface2); }
 <div class="toast" id="toast"></div>
 
 <script>
+// ── TYPE MAPS ──
 const TYPE_LABELS={research:'Research',poem:'Poem reading',chapter:'Early chapter',process:'Process vlog',live:'Live session',novel:'Novel excerpt',script:'Script',other:'Other'};
 const TYPE_CSS={research:'type-research',poem:'type-poem',chapter:'type-chapter',process:'type-process',live:'type-live',novel:'type-novel',script:'type-script',other:'type-other'};
 const MEDIA_ICONS={video:'▶',audio:'♪',image:'◻',none:'—'};
+const CAT_LABELS={jung:'Jungian psychology',myth:'Mythology & folklore',neuro:'Neuroscience',esoteric:'Esoteric & Hermetic',fiction:'Fiction reference'};
+const CAT_CSS={jung:'cat-jung',myth:'cat-myth',neuro:'cat-neuro',esoteric:'cat-esoteric',fiction:'cat-fiction'};
 
+// ── SEED DATA ──
 const SEED_POSTS=[
   {id:1,title:'Research drop — Jungian archetypes & The Blood Harmonic',type:'research',date:'2026-06-10',desc:"How the shadow archetype maps onto Laurent and every antagonist I write.",mediaType:'none',mediaData:null},
   {id:2,title:'Poem reading — three poems from Fera Lux',type:'poem',date:'2026-06-14',desc:'Reading three poems with context on what I was feeling when I wrote each one.',mediaType:'none',mediaData:null},
   {id:3,title:'Early chapter drop — The Hush House, chapter 2',type:'chapter',date:'2026-06-18',desc:'First look at Chapter 2. Mara enters the house for the first time.',mediaType:'none',mediaData:null},
   {id:4,title:'Live Q&A — June founding circle session',type:'live',date:'2026-06-20',desc:'Open questions on the series, the research, anything.',mediaType:'none',mediaData:null},
   {id:5,title:'Research drop — mythology & the feminine uncanny',type:'research',date:'2026-06-25',desc:"The specific myths feeding the world of The Blood Harmonic.",mediaType:'none',mediaData:null},
-  {id:6,title:'Process vlog — a real drafting session',type:'process',date:'2026-06-28',desc:'Behind the scenes of writing Chapter 3.',mediaType:'none',mediaData:null},
-  {id:7,title:'Research drop — neuroscience of desire & fear',type:'research',date:'2026-07-02',desc:'How the brain processes desire and fear — and how I write those states into characters.',mediaType:'none',mediaData:null},
-  {id:8,title:'Cover artist search — founding circle input',type:'process',date:'2026-07-07',desc:"I need your help finding the right artist for The Blood Harmonic.",mediaType:'none',mediaData:null},
-  {id:9,title:'Early chapter drop — The Hush House, chapter 3',type:'chapter',date:'2026-07-12',desc:"Chapter 3 — Laurent speaks for the first time.",mediaType:'none',mediaData:null},
-  {id:10,title:'Live — writing session, open room',type:'live',date:'2026-07-18',desc:"Write together in real time.",mediaType:'none',mediaData:null},
-  {id:11,title:'The Last Unborn — world overview',type:'novel',date:'2026-06-15',desc:'A first look at the world of my 7-book epic fantasy series.',mediaType:'none',mediaData:null},
-  {id:12,title:'TV pilot — first 10 pages',type:'script',date:'2026-07-05',desc:'Sharing the opening of my TV pilot with the founding circle before anyone else.',mediaType:'none',mediaData:null},
+  {id:6,title:'The Last Unborn — world overview',type:'novel',date:'2026-06-15',desc:'A first look at the world of my 7-book epic fantasy series.',mediaType:'none',mediaData:null},
+  {id:7,title:'TV pilot — first 10 pages',type:'script',date:'2026-07-05',desc:'Sharing the opening of my TV pilot with the founding circle.',mediaType:'none',mediaData:null},
 ];
 
-const SEED_CHAT=[
+const SEED_CHARS=[
+  {id:1,name:'Mara',role:'Protagonist',tag:'fmc',tagLabel:'FMC',desc:'Brilliant, broken, and trying not to be. Mara arrived at The Hush House because she had nowhere else to go. She does not believe in the supernatural. She is wrong.',lore:"Mara's shadow is her hunger — for belonging, for significance, for something to finally be real. She was raised to be small. The house will make her large. Her wound is a mother who left and a father who never noticed. Her want: to matter. Her fear: that she only matters when something terrible is happening."},
+  {id:2,name:'Laurent',role:'Male lead',tag:'mmc',tagLabel:'MMC',desc:'Centuries old and still learning how to be wanted without being consumed. Laurent is The Hush House itself. He did not choose this. He has stopped wishing he had.',lore:"Laurent is Mara's unintegrated shadow made external — everything she suppresses: the hunger, the rage, the need. His wound is a choice he made before he understood what choice meant. His want: to be seen without being feared. His fear: that he is only what he was made to be."},
+  {id:3,name:'Vesper',role:'Antagonist',tag:'antag',tagLabel:'Antagonist',desc:'She has been circling The Hush House for longer than Mara has been alive. Vesper does not want what Mara has. She wants what Mara is.',lore:"Vesper is the shadow of ambition — what happens when desire outpaces ethics across centuries. Her wound is a betrayal so old she's forgotten it was a wound. She calls it philosophy now. Her want: to complete what she started. Her fear: that she already did, and it wasn't enough."},
+  {id:4,name:'Silas',role:'Antagonist',tag:'antag',tagLabel:'Antagonist',desc:'Vesper\'s instrument. He believes he\'s her equal. He is not wrong about being dangerous.',lore:"Silas is the shadow of loyalty — devotion that calcified into something that can no longer bend. His wound is that he chose a person over his own soul and the person doesn't remember. His want: to be necessary. His fear: that he can be replaced."},
+  {id:5,name:'Cassian',role:'Supporting',tag:'support',tagLabel:'Support',desc:'He arrived at The Hush House two decades before Mara. He is still here. He does not talk about why.',lore:"Cassian is the shadow of acceptance — the peace that comes from giving up. His wound is something that happened in the house that he will not name. His want: for it not to happen to Mara. His fear: that it already has."},
+  {id:6,name:'Valen',role:'Antagonist',tag:'antag',tagLabel:'Antagonist',desc:'The oldest of them. Old enough that what he wants has long since stopped resembling anything human.',lore:"Valen is the shadow of purpose — what vision becomes when it outgrows the people it was supposed to serve. His wound is that he was right, once, and it destroyed everything. His want: to be right again. His fear: nothing. That is the most dangerous thing about him."},
+];
+
+const SEED_BOOKS=[
+  {id:1,title:'The Archetypes and the Collective Unconscious',author:'Carl Jung',cat:'jung',note:'Core text — shadow, anima/animus, the Self'},
+  {id:2,title:'The Hero with a Thousand Faces',author:'Joseph Campbell',cat:'myth',note:'Mythic structure underlying the series arc'},
+  {id:3,title:'Women Who Run With the Wolves',author:'Clarissa Pinkola Estés',cat:'myth',note:'Wild feminine, instinct, the predator archetype'},
+  {id:4,title:'The Body Keeps the Score',author:'Bessel van der Kolk',cat:'neuro',note:'Trauma physiology — feeding Mara\'s emotional arc'},
+  {id:5,title:'The Kybalion',author:'Three Initiates',cat:'esoteric',note:'Hermetic principles running through the world logic'},
+  {id:6,title:'Attached',author:'Amir Levine & Rachel Heller',cat:'neuro',note:'Attachment science — how Laurent and Mara\'s dynamic works'},
+];
+
+const SEED_MOOD=[
+  {id:1,title:'Oxblood and candlelight',cat:'aesthetic',desc:'The primary palette. Dark red that looks almost brown in shadow, almost alive in light. Candles that have been burning long enough to drip.',symbol:'◈'},
+  {id:2,title:'The architecture of grief',cat:'place',desc:'Houses that remember. Rooms that reorganize themselves around loss. The staircase that was never here before.',symbol:'⬡'},
+  {id:3,title:'Spiegel im Spiegel — Arvo Pärt',cat:'music',desc:'The sound of the house before Mara arrives. Tintinnabuli. Stillness that is not peace.',symbol:'♩'},
+  {id:4,title:'Shadow as presence',cat:'symbol',desc:'Jung\'s shadow not as darkness but as weight — the part of the self that presses against the floor.',symbol:'☽'},
+  {id:5,title:'Feminine uncanny',cat:'research',desc:'The woman who knows something is wrong but stays anyway. Not because she can\'t leave. Because leaving would mean admitting what she felt.',symbol:'✦'},
+  {id:6,title:'Abandoned grandeur',cat:'aesthetic',desc:'Gold that has tarnished. Mirrors that show something slightly off. Chandeliers that are too large for the rooms they hang in.',symbol:'◻'},
+];
+
+const SEED_POLLS=[
+  {id:1,question:'What should the cover of The Hush House feel like?',sub:'I\'m briefing cover artists — your answer shapes the direction.',options:['Dark & minimal — almost nothing, maximum dread','Rich & ornate — gothic detail, antique gold','Raw & editorial — photographic, a real face','Illustrated — painterly, mythic'],votes:[0,0,0,0]},
+];
+
+const SEED_SETTINGS={foundingCurrent:7,foundingTotal:20,stripeLink:'',announcement:'',announcementVisible:false};
+
+// ── STORAGE ──
+function load(key,seed){try{const s=localStorage.getItem(key);if(s)return JSON.parse(s);}catch(e){}save(key,seed);return seed;}
+function save(key,val){try{localStorage.setItem(key,JSON.stringify(val));}catch(e){showToast('Storage full');}}
+
+function loadPosts(){return load('kl_posts_v5',SEED_POSTS);}
+function savePosts(p){save('kl_posts_v5',p);}
+function loadChars(){return load('kl_chars',SEED_CHARS);}
+function loadBooks(){return load('kl_books',SEED_BOOKS);}
+function saveBooks(b){save('kl_books',b);}
+function loadMood(){return load('kl_mood',SEED_MOOD);}
+function saveMood(m){save('kl_mood',m);}
+function loadPolls(){return load('kl_polls',SEED_POLLS);}
+function savePolls(p){save('kl_polls',p);}
+function loadChat(){return load('kl_chat_v4',[
   {id:1,name:'Kanis Lupus',role:'host',text:"Welcome to the founding circle. This is our space — ask me anything.",time:'Jun 10, 9:02am'},
   {id:2,name:'Adriana',role:'member',text:"The shadow in Laurent — is that intentional Jungian framing?",time:'Jun 10, 9:14am'},
-  {id:3,name:'Kanis Lupus',role:'host',text:"100%. Every antagonist I write is someone's unintegrated shadow. Laurent is Mara's.",time:'Jun 10, 9:18am'},
-  {id:4,name:'Remi',role:'member',text:"The new poem wrecked me in the best way.",time:'Jun 14, 11:32am'},
-  {id:5,name:'Sol',role:'member',text:"When does Chapter 3 drop? Can't wait.",time:'Jun 18, 3:05pm'},
-];
+  {id:3,name:'Kanis Lupus',role:'host',text:"100%. Every antagonist I write is someone's unintegrated shadow.",time:'Jun 10, 9:18am'},
+]);}
+function saveChat(c){save('kl_chat_v4',c);}
+function loadSettings(){return load('kl_settings',SEED_SETTINGS);}
+function saveSettings(s){save('kl_settings',s);}
+function loadWaitlist(){return load('kl_waitlist',[]);}
+function saveWaitlist(w){save('kl_waitlist',w);}
 
-function loadPosts(){try{const s=localStorage.getItem('kl_posts_v4');if(s)return JSON.parse(s);}catch(e){}localStorage.setItem('kl_posts_v4',JSON.stringify(SEED_POSTS));return SEED_POSTS;}
-function savePosts(p){try{localStorage.setItem('kl_posts_v4',JSON.stringify(p));}catch(e){showToast('File too large for browser storage');}}
-function loadChat(){try{const s=localStorage.getItem('kl_chat_v3');if(s)return JSON.parse(s);}catch(e){}localStorage.setItem('kl_chat_v3',JSON.stringify(SEED_CHAT));return SEED_CHAT;}
-function saveChat(c){try{localStorage.setItem('kl_chat_v3',JSON.stringify(c));}catch(e){}}
+// ── UTILS ──
 function today(){return new Date().toISOString().split('T')[0];}
 function isPublished(d){return d<=today();}
 function formatDate(d){const dt=new Date(d+'T12:00:00');return{day:dt.getDate(),month:dt.toLocaleString('en',{month:'short'}).toUpperCase()};}
 function nowTime(){return new Date().toLocaleString('en',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit',hour12:true});}
+function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3000);}
 
+// ── ANNOUNCEMENT ──
+function renderAnnouncement(){
+  const s=loadSettings();
+  const bar=document.getElementById('announcement-bar');
+  if(s.announcement&&s.announcementVisible){
+    document.getElementById('announcement-text').textContent=s.announcement;
+    bar.classList.add('visible');
+  } else { bar.classList.remove('visible'); }
+}
+function closeAnnouncement(){const s=loadSettings();s.announcementVisible=false;saveSettings(s);renderAnnouncement();}
+function setAnnouncement(){
+  const text=document.getElementById('ann-text').value.trim();
+  if(!text){showToast('Enter announcement text');return;}
+  const s=loadSettings();s.announcement=text;s.announcementVisible=true;saveSettings(s);
+  renderAnnouncement();showToast('Announcement posted');
+}
+function clearAnnouncement(){
+  const s=loadSettings();s.announcement='';s.announcementVisible=false;saveSettings(s);
+  renderAnnouncement();showToast('Cleared');
+}
+
+// ── FOUNDING COUNTER ──
+function renderFoundingBar(){
+  const s=loadSettings();
+  const cur=s.foundingCurrent||0,tot=s.foundingTotal||20;
+  const dots=document.getElementById('founding-dots');
+  const text=document.getElementById('founding-text');
+  const urgency=document.getElementById('founding-urgency');
+  const display=Math.min(tot,20);
+  dots.innerHTML=Array.from({length:display},(_,i)=>`<div class="dot${i<cur?' filled':''}"></div>`).join('');
+  text.innerHTML=`<strong>${cur} of ${tot}</strong> founding spots claimed`;
+  const rem=tot-cur;
+  if(rem<=5)urgency.textContent=`Only ${rem} spot${rem===1?'':'s'} remaining`;
+  else urgency.textContent='';
+  const btn=document.getElementById('join-btn-main');
+  if(s.stripeLink){btn.onclick=()=>window.open(s.stripeLink,'_blank');}
+  // Populate admin fields
+  const fi=document.getElementById('founding-current');
+  const ft=document.getElementById('founding-total');
+  const fl=document.getElementById('stripe-link');
+  if(fi)fi.value=cur;
+  if(ft)ft.value=tot;
+  if(fl)fl.value=s.stripeLink||'';
+}
+function saveFoundingSettings(){
+  const s=loadSettings();
+  s.foundingCurrent=parseInt(document.getElementById('founding-current').value)||0;
+  s.foundingTotal=parseInt(document.getElementById('founding-total').value)||20;
+  s.stripeLink=document.getElementById('stripe-link').value.trim();
+  saveSettings(s);renderFoundingBar();showToast('Saved');
+}
+
+// ── WAITLIST ──
+function toggleWaitlist(){document.getElementById('waitlist-form').classList.toggle('open');}
+function submitWaitlist(){
+  const email=document.getElementById('waitlist-email').value.trim();
+  if(!email||!email.includes('@')){showToast('Enter a valid email');return;}
+  const wl=loadWaitlist();
+  if(wl.find(e=>e.email===email)){showToast('Already on the list');return;}
+  wl.push({email,date:nowTime()});saveWaitlist(wl);
+  document.getElementById('waitlist-email').value='';
+  document.getElementById('waitlist-form').classList.remove('open');
+  showToast('You\'re on the list — I\'ll be in touch');
+}
+function renderWaitlistAdmin(){
+  const wl=loadWaitlist();
+  const el=document.getElementById('waitlist-admin-list');
+  if(!wl.length){el.innerHTML='<div class="empty-state">No waitlist signups yet.</div>';return;}
+  el.innerHTML=wl.map((e,i)=>`<div class="admin-row"><div class="admin-row-main">${e.email}</div><div class="admin-row-sub">${e.date}</div><button class="admin-delete" onclick="removeWaitlist(${i})">✕</button></div>`).join('');
+}
+function removeWaitlist(i){const wl=loadWaitlist();wl.splice(i,1);saveWaitlist(wl);renderWaitlistAdmin();showToast('Removed');}
+
+// ── FEED ──
 let currentFilter='all';
 let selectedFileType='none',selectedFileData=null;
 
@@ -368,16 +798,7 @@ function renderFeed(){
     const badge=!pub?`<span class="post-status-badge upcoming">Scheduled — ${post.date}</span>`:`<span class="post-status-badge">Published</span>`;
     const thumb=pub&&post.mediaData?buildThumb(post):'';
     const action=pub?`<button class="post-action" onclick="openModal(${post.id})">Read / watch</button>`:`<div class="post-lock">🔒 Publishes ${post.date}</div>`;
-    return `<div class="${cls}"><div class="post-inner">
-      <div class="post-date-col"><div class="post-date-day">${day}</div><div class="post-date-month">${month}</div></div>
-      <div class="post-divider"></div>
-      <div class="post-body">
-        <div class="post-meta"><span class="post-type ${TYPE_CSS[post.type]||'type-other'}">${TYPE_LABELS[post.type]||post.type}</span>${badge}</div>
-        <div class="post-title">${post.title}</div>
-        <div class="post-desc">${post.desc}</div>
-        ${thumb}${action}
-      </div>
-    </div></div>`;
+    return`<div class="${cls}"><div class="post-inner"><div class="post-date-col"><div class="post-date-day">${day}</div><div class="post-date-month">${month}</div></div><div class="post-divider"></div><div class="post-body"><div class="post-meta"><span class="post-type ${TYPE_CSS[post.type]||'type-other'}">${TYPE_LABELS[post.type]||post.type}</span>${badge}</div><div class="post-title">${post.title}</div><div class="post-desc">${post.desc}</div>${thumb}${action}</div></div></div>`;
   }).join('');
 }
 
@@ -389,13 +810,138 @@ function buildThumb(post){
   return'';
 }
 
-function filterFeed(type,btn){
-  currentFilter=type;
-  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('on'));
-  btn.classList.add('on');
-  renderFeed();
-}
+function filterFeed(type,btn){currentFilter=type;document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('on'));btn.classList.add('on');renderFeed();}
 
+// ── CHARACTERS ──
+function renderChars(){
+  const chars=loadChars();
+  document.getElementById('chars-grid').innerHTML=chars.map(c=>`
+    <div class="char-card" onclick="toggleLore(${c.id})">
+      <div class="char-role">${c.role}</div>
+      <div class="char-name">${c.name}</div>
+      <span class="char-tag tag-${c.tag}">${c.tagLabel}</span>
+      <div class="char-desc">${c.desc}</div>
+      <div class="char-read-more">↓ Deeper lore</div>
+      <div class="char-lore" id="lore-${c.id}">
+        <div class="char-lore-label">Shadow & wound</div>
+        <p>${c.lore}</p>
+      </div>
+    </div>`).join('');
+}
+function toggleLore(id){const el=document.getElementById('lore-'+id);el.classList.toggle('open');}
+
+// ── MOODBOARD ──
+let moodFilter='all';
+function renderMood(){
+  const items=loadMood();
+  const filtered=moodFilter==='all'?items:items.filter(m=>m.cat===moodFilter);
+  const grid=document.getElementById('mood-grid');
+  if(!filtered.length){grid.innerHTML='<div class="empty-state" style="break-inside:avoid;">Nothing here yet — add items from admin.</div>';return;}
+  grid.innerHTML=filtered.map(m=>`<div class="mood-item"><div class="mood-item-inner"><span class="mood-symbol">${m.symbol||'◈'}</span><div class="mood-item-title">${m.title}</div><div class="mood-item-desc">${m.desc}</div><div class="mood-item-cat">${m.cat}</div></div></div>`).join('');
+}
+function filterMood(cat,btn){moodFilter=cat;document.querySelectorAll('.mood-tag').forEach(b=>b.classList.remove('on'));btn.classList.add('on');renderMood();}
+function addMoodItem(){
+  const title=document.getElementById('mood-title').value.trim();
+  const cat=document.getElementById('mood-cat').value;
+  const desc=document.getElementById('mood-desc').value.trim();
+  const symbol=document.getElementById('mood-symbol').value.trim()||'◈';
+  if(!title){showToast('Add a title');return;}
+  const items=loadMood();items.push({id:Date.now(),title,cat,desc,symbol});saveMood(items);
+  renderMood();renderAdminMood();
+  document.getElementById('mood-title').value='';document.getElementById('mood-desc').value='';document.getElementById('mood-symbol').value='';
+  showToast('Added to board');
+}
+function renderAdminMood(){
+  const items=loadMood();
+  const el=document.getElementById('admin-mood-list');
+  if(!items.length){el.innerHTML='<div class="empty-state">Nothing yet.</div>';return;}
+  el.innerHTML=items.map(m=>`<div class="admin-row"><div class="admin-row-main">${m.symbol} ${m.title}</div><div class="admin-row-sub">${m.cat}</div><button class="admin-delete" onclick="deleteMood(${m.id})">✕</button></div>`).join('');
+}
+function deleteMood(id){saveMood(loadMood().filter(m=>m.id!==id));renderMood();renderAdminMood();showToast('Removed');}
+
+// ── READING LIST ──
+function renderReading(){
+  const books=loadBooks();
+  const sections={jung:'Jungian psychology',myth:'Mythology & folklore',neuro:'Neuroscience',esoteric:'Esoteric & Hermetic',fiction:'Fiction reference'};
+  const el=document.getElementById('reading-list-render');
+  let html='';
+  Object.entries(sections).forEach(([cat,label])=>{
+    const group=books.filter(b=>b.cat===cat);
+    if(!group.length)return;
+    html+=`<p class="reading-section-label">${label}</p><div class="book-list">${group.map((b,i)=>`<div class="book-row"><div class="book-num">${i+1}</div><div class="book-body"><div class="book-title">${b.title}</div><div class="book-author">${b.author}</div>${b.note?`<div class="book-note">${b.note}</div>`:''}</div><span class="book-cat ${CAT_CSS[b.cat]}">${CAT_LABELS[b.cat]}</span></div>`).join('')}</div>`;
+  });
+  if(!html)html='<div class="empty-state">No books yet — add from admin.</div>';
+  el.innerHTML=html;
+}
+function addBook(){
+  const title=document.getElementById('book-title').value.trim();
+  const author=document.getElementById('book-author').value.trim();
+  const cat=document.getElementById('book-cat').value;
+  const note=document.getElementById('book-note').value.trim();
+  if(!title||!author){showToast('Add title and author');return;}
+  const books=loadBooks();books.push({id:Date.now(),title,author,cat,note});saveBooks(books);
+  renderReading();renderAdminBooks();
+  document.getElementById('book-title').value='';document.getElementById('book-author').value='';document.getElementById('book-note').value='';
+  showToast('Book added');
+}
+function renderAdminBooks(){
+  const books=loadBooks();
+  const el=document.getElementById('admin-books-list');
+  if(!books.length){el.innerHTML='<div class="empty-state">No books yet.</div>';return;}
+  el.innerHTML=books.map(b=>`<div class="admin-row"><div class="admin-row-main">${b.title}</div><div class="admin-row-sub">${b.author}</div><button class="admin-delete" onclick="deleteBook(${b.id})">✕</button></div>`).join('');
+}
+function deleteBook(id){saveBooks(loadBooks().filter(b=>b.id!==id));renderReading();renderAdminBooks();showToast('Removed');}
+
+// ── POLLS ──
+function renderPolls(){
+  const polls=loadPolls();
+  const el=document.getElementById('polls-list');
+  if(!polls.length){el.innerHTML='<div class="empty-state">No polls yet — admin will add one soon.</div>';return;}
+  const total_votes=p=>p.votes.reduce((a,b)=>a+b,0);
+  el.innerHTML=polls.map(p=>{
+    const tot=total_votes(p)||1;
+    const voted=localStorage.getItem('voted_'+p.id);
+    return`<div class="poll-card">
+      <div class="poll-question">${p.question}</div>
+      ${p.sub?`<div class="poll-sub">${p.sub}</div>`:''}
+      <div class="poll-options">${p.options.map((opt,i)=>{
+        const pct=Math.round((p.votes[i]/tot)*100);
+        return`<button class="poll-option${voted==i?' voted':''}" onclick="vote(${p.id},${i})">${opt}${voted!==null?`<div class="poll-bar-wrap"><div class="poll-bar" style="width:${pct}%"></div></div><span class="poll-pct">${pct}%</span>`:''}</button>`;
+      }).join('')}</div>
+      <div class="poll-total">${total_votes(p)} vote${total_votes(p)===1?'':'s'}</div>
+    </div>`;
+  }).join('');
+}
+function vote(pollId,optIdx){
+  if(localStorage.getItem('voted_'+pollId)!==null){showToast('Already voted');return;}
+  const polls=loadPolls();
+  const poll=polls.find(p=>p.id===pollId);
+  if(!poll)return;
+  poll.votes[optIdx]++;
+  savePolls(polls);
+  localStorage.setItem('voted_'+pollId,optIdx);
+  renderPolls();showToast('Vote recorded');
+}
+function addPoll(){
+  const q=document.getElementById('poll-q').value.trim();
+  const sub=document.getElementById('poll-sub').value.trim();
+  const opts=[document.getElementById('poll-o1').value.trim(),document.getElementById('poll-o2').value.trim(),document.getElementById('poll-o3').value.trim(),document.getElementById('poll-o4').value.trim()].filter(Boolean);
+  if(!q||opts.length<2){showToast('Need a question and at least 2 options');return;}
+  const polls=loadPolls();
+  polls.push({id:Date.now(),question:q,sub,options:opts,votes:opts.map(()=>0)});
+  savePolls(polls);renderPolls();renderAdminPolls();
+  ['poll-q','poll-sub','poll-o1','poll-o2','poll-o3','poll-o4'].forEach(id=>document.getElementById(id).value='');
+  showToast('Poll created');
+}
+function renderAdminPolls(){
+  const polls=loadPolls();
+  const el=document.getElementById('admin-polls-list');
+  if(!polls.length){el.innerHTML='<div class="empty-state">No polls yet.</div>';return;}
+  el.innerHTML=polls.map(p=>`<div class="admin-row"><div class="admin-row-main">${p.question}</div><div class="admin-row-sub">${p.votes.reduce((a,b)=>a+b,0)} votes</div><button class="admin-delete" onclick="deletePoll(${p.id})">✕</button></div>`).join('');
+}
+function deletePoll(id){savePolls(loadPolls().filter(p=>p.id!==id));renderPolls();renderAdminPolls();showToast('Poll removed');}
+
+// ── CHAT ──
 function renderChat(){
   const msgs=loadChat();
   document.getElementById('stat-chat').textContent=msgs.length;
@@ -411,21 +957,16 @@ function renderChat(){
   }).join('');
   c.scrollTop=c.scrollHeight;
 }
-
 function sendMessage(){
   const name=document.getElementById('chat-name').value.trim()||'Member';
   const text=document.getElementById('chat-text').value.trim();
   if(!text)return;
-  const msgs=loadChat();
-  msgs.push({id:Date.now(),name,role:'mine',text,time:nowTime()});
-  saveChat(msgs);renderChat();
-  document.getElementById('chat-text').value='';
+  const msgs=loadChat();msgs.push({id:Date.now(),name,role:'mine',text,time:nowTime()});
+  saveChat(msgs);renderChat();document.getElementById('chat-text').value='';
 }
+document.addEventListener('keydown',e=>{if(document.activeElement===document.getElementById('chat-text')&&e.key==='Enter'&&!e.shiftKey){e.preventDefault();sendMessage();}});
 
-document.addEventListener('keydown',e=>{
-  if(document.activeElement===document.getElementById('chat-text')&&e.key==='Enter'&&!e.shiftKey){e.preventDefault();sendMessage();}
-});
-
+// ── FILE UPLOAD ──
 function processFile(file){
   if(!file)return;
   const ext=file.name.split('.').pop().toLowerCase();
@@ -435,53 +976,41 @@ function processFile(file){
   else{showToast('Unsupported file type');return;}
   const sizeMB=(file.size/1024/1024).toFixed(1);
   document.getElementById('upload-preview-area').innerHTML=`<div class="upload-preview"><div class="upload-preview-name">${MEDIA_ICONS[selectedFileType]} ${file.name}</div><div class="upload-preview-size">${sizeMB} MB</div><button class="upload-preview-remove" onclick="clearFile()">✕</button></div>`;
-  const reader=new FileReader();
-  reader.onload=e=>{selectedFileData=e.target.result;};
-  reader.readAsDataURL(file);
+  const reader=new FileReader();reader.onload=e=>{selectedFileData=e.target.result;};reader.readAsDataURL(file);
 }
+function clearFile(){selectedFileType='none';selectedFileData=null;document.getElementById('upload-preview-area').innerHTML='';document.getElementById('f-file').value='';}
 
-function clearFile(){
-  selectedFileType='none';selectedFileData=null;
-  document.getElementById('upload-preview-area').innerHTML='';
-  document.getElementById('f-file').value='';
-}
-
+// ── POSTS ADMIN ──
 function addPost(){
   const title=document.getElementById('f-title').value.trim();
   const type=document.getElementById('f-type').value;
   const date=document.getElementById('f-date').value;
   const desc=document.getElementById('f-desc').value.trim();
   if(!title||!date){showToast('Add a title and date');return;}
-  const btn=document.getElementById('submit-btn');
-  btn.disabled=true;btn.textContent='Saving…';
+  const btn=document.getElementById('submit-btn');btn.disabled=true;btn.textContent='Saving…';
   setTimeout(()=>{
     try{
-      const posts=loadPosts();
-      posts.push({id:Date.now(),title,type,date,desc,mediaType:selectedFileType,mediaData:selectedFileData});
+      const posts=loadPosts();posts.push({id:Date.now(),title,type,date,desc,mediaType:selectedFileType,mediaData:selectedFileData});
       savePosts(posts);renderAdmin();renderFeed();
-      document.getElementById('f-title').value='';
-      document.getElementById('f-desc').value='';
-      clearFile();showToast('Post scheduled');
+      document.getElementById('f-title').value='';document.getElementById('f-desc').value='';clearFile();showToast('Post scheduled');
     }catch(e){showToast('Could not save — file may be too large');}
     btn.disabled=false;btn.textContent='Schedule post';
   },350);
 }
-
-function deletePost(id){const p=loadPosts().filter(x=>x.id!==id);savePosts(p);renderAdmin();renderFeed();showToast('Removed');}
-
+function deletePost(id){savePosts(loadPosts().filter(x=>x.id!==id));renderAdmin();renderFeed();showToast('Removed');}
 function renderAdmin(){
   const posts=loadPosts().sort((a,b)=>b.date.localeCompare(a.date));
   const list=document.getElementById('admin-list');
   if(!posts.length){list.innerHTML='<div class="empty-state">No posts yet.</div>';return;}
   list.innerHTML=posts.map(post=>{
     const pub=isPublished(post.date);
-    return`<div class="admin-post-row"><div class="admin-post-date">${post.date}</div><div class="admin-post-type ${TYPE_CSS[post.type]||'type-other'}">${TYPE_LABELS[post.type]||post.type}</div><div class="admin-post-title">${post.title}</div><div class="admin-post-media">${post.mediaType!=='none'?MEDIA_ICONS[post.mediaType]+' '+post.mediaType:'—'}</div><span style="font-size:0.67rem;color:${pub?'#7AB855':'var(--gold-dim)'};">${pub?'Live':'Sched'}</span><button class="admin-delete" onclick="deletePost(${post.id})">✕</button></div>`;
+    return`<div class="admin-row"><div class="admin-row-sub" style="min-width:76px;">${post.date}</div><div class="admin-row-main">${post.title}</div><div class="admin-row-sub">${TYPE_LABELS[post.type]||post.type}</div><span style="font-size:0.67rem;color:${pub?'#7AB855':'var(--gold-dim)'};">${pub?'Live':'Sched'}</span><button class="admin-delete" onclick="deletePost(${post.id})">✕</button></div>`;
   }).join('');
 }
 
+// ── MODAL ──
 function openModal(id){
-  const post=loadPosts().find(p=>p.id===id);
-  if(!post)return;
+  const post=loadPosts().find(p=>p.id===id);if(!post)return;
   document.getElementById('modal-title').textContent=post.title;
   document.getElementById('modal-desc').textContent=post.desc;
   const media=document.getElementById('modal-media');
@@ -492,14 +1021,32 @@ function openModal(id){
   }else{media.innerHTML=`<div class="modal-no-media"><span>No media attached</span></div>`;}
   document.getElementById('modal').classList.add('open');
 }
-
 function closeModalDirect(){document.getElementById('modal').classList.remove('open');}
 
+// ── NAV ──
 function switchSubTab(tab,btn){
-  ['feed','chat'].forEach(t=>document.getElementById('tab-'+t).style.display=t===tab?'block':'none');
+  ['feed','characters','moodboard','reading','polls','chat'].forEach(t=>{
+    const el=document.getElementById('tab-'+t);if(el)el.style.display=t===tab?'block':'none';
+  });
   document.querySelectorAll('.sub-tab').forEach(b=>b.classList.remove('active'));
   btn.classList.add('active');
   if(tab==='chat')renderChat();
+  if(tab==='moodboard')renderMood();
+  if(tab==='reading')renderReading();
+  if(tab==='polls')renderPolls();
+  if(tab==='characters')renderChars();
+}
+
+function switchAdminTab(tab,btn){
+  document.querySelectorAll('.admin-panel').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.admin-tab').forEach(b=>b.classList.remove('active'));
+  document.getElementById('panel-'+tab).classList.add('active');
+  btn.classList.add('active');
+  if(tab==='waitlist')renderWaitlistAdmin();
+  if(tab==='polls'){renderAdminPolls();}
+  if(tab==='reading')renderAdminBooks();
+  if(tab==='moodboard')renderAdminMood();
+  if(tab==='founding')renderFoundingBar();
 }
 
 function switchView(view){
@@ -509,12 +1056,10 @@ function switchView(view){
   if(view==='admin')renderAdmin();
 }
 
-function showToast(msg){
-  const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');
-  setTimeout(()=>t.classList.remove('show'),3000);
-}
-
+// ── INIT ──
 document.getElementById('f-date').value=today();
+renderAnnouncement();
+renderFoundingBar();
 renderFeed();
 </script>
 </body>
